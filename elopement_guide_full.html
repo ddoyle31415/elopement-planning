@@ -235,6 +235,8 @@
   .component-photo {
     width: 100%;
     height: 420px;
+    /* display: grid; */
+    /* grid-template-areas: "stack"; */
     overflow: hidden;
     position: relative;
     margin-bottom: 1.8rem;
@@ -242,8 +244,10 @@
   }
   .component-photo img {
     width: 100%; height: 100%;
-    object-fit: cover; display: block;
+    object-fit: cover; 
+    display: block;
     transition: transform 0.7s ease;
+    position: absolute;
   }
   .component:hover .component-photo img { transform: scale(1.03); }
 
@@ -483,13 +487,19 @@
   <div class="components">
 
     <!-- LODGING -->
-    <div class="component">
+    <!-- <div class="component">
       <div class="component-label">Lodging</div>
       <h3 class="component-name">Hearthstone House B&B</h3>
       <a class="component-website" href="https://hearthstonehouse.com" target="_blank">hearthstonehouse.com · 134 E Hyman Ave, Aspen · (970) 925-7632</a>
       <div class="component-photo">
-        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=85&fit=crop" alt="Hearthstone House B&B Aspen">
+        <img src="https://hearthstonehouse.com/wp-content/uploads/2024/01/Summer-Hot-Tub-scaled.jpg" alt="Hearthstone House B&B Aspen">
         <span class="photo-credit">Boutique B&B Aspen</span>
+      </div>
+      <div class="component-photo">
+        <img src="https://hearthstonehouse.com/wp-content/uploads/2013/09/Shot1.jpg">
+      </div>
+      <div class="component-photo">
+        <img src="https://hearthstonehouse.com/wp-content/uploads/2013/09/Shot22.jpg">
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -510,6 +520,43 @@
           </div>
           <div class="review-summary">Guests consistently praise the FLW-inspired architecture, superb central location, made-to-order breakfasts, and the intimate wine & cheese happy hour. The hot tub after a day in the mountains is a recurring highlight. Newer reviewers note some inconsistency with service — request upper-floor rooms for quieter nights and better views.</div>
           <div class="review-quote">"The communal gathering room is large and very comfortable. They serve a lovely wine and cheese get together in the early evening — very nice sitting by the roaring fire." — TripAdvisor</div>
+        </div>
+      </div>
+      <div class="price-bar">
+        <span class="price-label">Estimated Rate</span>
+        <span class="price-value">~$380–420 / night · 3 nights</span>
+      </div>
+    </div> -->
+    <div class="component">
+      <div class="component-label">Lodging</div>
+      <h3 class="component-name">The Little Nell</h3>
+      <a class="component-website" href="https://thelittlenell.com" target="_blank">thelittlenell.com · 675 E Durant Ave, Aspen · (970) 920-4600</a>
+      <div class="component-photo">
+        <img src="https://www.thelittlenell.com/-/media/thelittlenell/images/tln_gallery_12/tln_gallery_summer_3.jpg?h=800&w=800&hash=8FFA354CAF88F63B895CF7DE3EA4AA2B" >
+      </div>
+      <div class="component-photo">
+        <img src="https://images.trvl-media.com/lodging/3000000/2860000/2859000/2858942/aedcfae7.jpg?impolicy=resizecrop&rw=1200&ra=fit">
+      </div>
+      <div class="component-photo">
+        <img src="https://images.trvl-media.com/lodging/3000000/2860000/2859000/2858942/a23102b8.jpg?impolicy=resizecrop&rw=1200&ra=fit">
+      </div>
+      <div class="component-body">
+        <ul class="details-list">
+          <li>Take the Silver Queen Gondola to the summit of Aspen Mountain for a breathtaking "top of the world" vow exchange.</li>
+          <li>For your post-ceremony shoot, nothing beats the iconic, reflective beauty of the Maroon Bells at sunrise.</li>
+          <li>Downtown Aspen is steps away, offering intimate, world-class dining and high-end boutiques perfect for a sophisticated, low-key wedding dinner.</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">4.7</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              <span class="review-count">&nbsp;· 92 TripAdvisor reviews</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/search/Little+Nell+Hotel+Aspen" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">With a stellar 4.7/5 rating, couples consistently rave about the personalized attention and the "world at your feet" atmosphere. It is the gold standard for luxury service that feels effortlessly warm rather than stuffy.</div>
+          <div class="review-quote">"The staff here treats every guest like royalty, making the logistics of a luxury elopement feel completely seamless and intimate. It’s not just a hotel; it’s the perfect backdrop for a once-in-a-lifetime memory."</div>
         </div>
       </div>
       <div class="price-bar">
