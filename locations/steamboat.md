@@ -2,17 +2,31 @@
 
 ## Lodging
 - [The Victorian B&B](https://www.victoriansteamboat.com), Restored Victorian mansion apartment, gourmet breakfast & hot tub included, *$600–900 / 4 nights*
+    - Photo:
+    - Photo:
 
 ## Ceremony Location
 - [Pearl Lake State Park](https://cpw.state.co.us/placestogo/parks/PearlLake), Alpine lake, towering pines, peak wildflowers in August, *$50–150 permit*
+    - Photo:
+    - Photo:
 
 ## Friday Wedding Dinner
 - [Café Diva](https://www.cafediva.com), Steamboat's premier fine dining, world-class wine program, *$150–220 for two*
+    - Photo:
+    - Photo:
+
 - [Aurum Food & Wine](https://aurumsteamboat.com), Yampa River views, complimentary champagne for celebrations, *$130–200 for two*
+    - Photo:
+    - Photo:
 
 ## Saturday Adventure
 - [Wild West Balloon Adventures](https://www.wildwestballooning.com), Sunrise balloon over Yampa Valley, champagne toast included, *$670–800 for two*
+    - Photo:
+    - Photo:
+
 - [Saddleback Ranch](https://www.saddlebackranch.net), Private 2-hour guided horseback ride through Yampa Valley, *$200–300 for two*
+    - Photo:
+    - Photo:
 
 ## Couples Massage
 - [Waterside Day Spa](https://www.watersidedayspa.com), 3-hour riverside couples massage package + salt room, *$200–280*

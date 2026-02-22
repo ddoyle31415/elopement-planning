@@ -46,3 +46,21 @@ The `locations/` markdown files are the research source; the HTML was written se
 - Some locations in the markdown have more components (couples massage, private car, Thursday dinner) that are not in the HTML guide
 
 When updating the HTML, cross-reference the corresponding `.md` file for accurate vendor names, URLs, phone numbers, and pricing.
+
+## Instructions
+
+### Researching Vendors
+When researching vendors read and summarize google reviews for each vendor. Write a summary of the google reviews to the referenced location markdown file, underneath each vendor as a sub-bullet starting with "Google Review Summary:". Below that sub-bullet, state the star rating of the vendor from google reviews, starting with "Google rating:"  
+
+### Populating the elopement_guide_template.html
+When populating the template html page with a new location, read the corresponding markdown file in `locations/` to see each major component. Map each option under each component to the templated sections. Embed photos for each component based on the web links provided under each option. For example:
+```
+# Aspen
+
+## Lodging
+- [The Little Nell](https://www.thelittlenell.com/) — Aspen's only Five-Star, Five-Diamond ski-in/ski-out hotel at the base of Aspen Mountain, fireplace rooms, heated pool, on-site spa, and Michelin-recommended restaurant — ~$400–$800/night (August low season), ~$1,200–$2,400 for 3 nights
+    - Photo: <photo link 1>
+    - Photo: <photo link 2>
+```
+Embed each photo link within the lodging section of the Aspen location to describe `The Little Nell` hotel
+

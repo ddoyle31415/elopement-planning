@@ -2,16 +2,26 @@
 
 ## Lodging
 - [Arapaho Valley Ranch](https://www.arapahovalleyranch.com/) - Navajo or Niwot Cabin, historic 400 sq ft cabins in Arapaho National Forest with private porches and mountain views, ~$250–400/night
+    - Photo:
+    - Photo:
 
 ## Ceremony Location
 - [Point Park, Grand Lake](https://boco.colorado.gov/parks-open-space) - Lakeside dock & lawn at intersection of Grand Lake and Shadow Mountain Lake, US Forest Service permit required, ~$0–100
+    - Photo:
+    - Photo:
 
 ## Friday Wedding Dinner
 - [Rapids Lodge & Restaurant](https://www.rapidslodge.com/) - Voted Most Romantic & Grand Lake's #1 Restaurant, riverside dining on Tonahutu River with elk medallions and fresh trout, ~$150–250
+    - Photo:
+    - Photo:
 - [Huntington House Tavern at Grand Lake Lodge](https://www.grandlakelodge.com/) - Panoramic lake views, elk chops and filet mignon with prix fixe menu option, ~$150–250
+    - Photo:
+    - Photo:
 
 ## Saturday Adventure
 - [Grand Adventure Balloon Tours](https://grandadventureballoon.com/) - Fraser Valley sunrise flight with Continental Divide views, champagne toast and breakfast included, Fodor's Best 10 in US, ~$400–600 for two
+    - Photo:
+    - Photo:
 
 ## Couples Massage
 - [Sage Massage & Acupuncture](https://sagemassageacupuncture.com/) - Voted #1 Massage in Grand County 6 years, Himalayan salt stone and CBD treatments, couples/tandem welcome, ~$250–400

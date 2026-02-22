@@ -2,10 +2,18 @@
 
 ## Lodging
 - [The Bradley Boulder Inn](https://www.bradleyboulderinn.com) — B&B, ~$275/night *(top pick)*
+    - Photo:
+    - Photo: 
+
 - [St. Julien Hotel & Spa](https://www.stjulien.com) — Luxury hotel, ~$425/night *(full-service alt)*
+    - Photo:
+    - Photo: 
 
 ## Ceremony
 - [Lost Gulch Overlook](https://boco.colorado.gov/parks-open-space) — Flagstaff Mountain, Boulder
+    - Photo:
+    - Photo: 
+
 - [OSMP Permit](https://boco.colorado.gov/parks-open-space/permits-and-reservations) — Required for photographer (~$100)
 
 ## Private Car
@@ -16,10 +24,16 @@
 
 ## Friday Dinner
 - [Black Cat Farmstead](https://blackcatboulder.com) — Farm-to-table, ~$250 *(primary)*
+    - Photo:
+    - Photo: 
+
 - [Corrida](https://corridaboulder.com) — Rooftop, Flatirons views, ~$200 *(backup)*
+    - Photo:
+    - Photo: 
 
 ## Saturday Morning
 - [Fair Winds Hot Air Balloon](https://www.fairwindsballoon.com) — ~$550 for two
+    - Photo:
 
 ## Saturday Afternoon
 - [Vinnie Fera Winery](https://www.vinnieferawinery.com) — Boutique tasting, ~$50
