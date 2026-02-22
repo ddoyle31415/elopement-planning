@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Colorado Elopement · Location Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a18;
+    --cream: #f5f0e8;
+    --gold: #b8935a;
+    --gold-light: #d4b483;
+    --gold-pale: rgba(184,147,90,0.08);
+    --muted: #8a8278;
+    --white: #ffffff;
+    --card-bg: #faf7f2;
+    --divider: rgba(184,147,90,0.2);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--ink);
+    color: var(--cream);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+  }
+
+  /* ─── HERO ─────────────────────────────────────── */
+  .hero {
+    height: 100vh;
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1800&q=85&fit=crop');
+    background-size: cover;
+    background-position: center 30%;
+    filter: brightness(0.4) saturate(0.75);
+    animation: slowZoom 25s ease-in-out infinite alternate;
+  }
+  @keyframes slowZoom {
+    from { transform: scale(1.0); }
+    to   { transform: scale(1.08); }
+  }
+  .hero-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to bottom, rgba(26,26,24,0.15) 0%, rgba(26,26,24,0.0) 40%, rgba(26,26,24,0.75) 100%);
+  }
+  .hero-content {
+    position: relative;
+    text-align: center;
+    padding: 2rem;
+    animation: fadeUp 1.4s ease both;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(36px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .hero-eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.38em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 1.4rem;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    font-weight: 400;
+    line-height: 1.0;
+    color: var(--white);
+    margin-bottom: 1.2rem;
+  }
+  .hero h1 em { font-style: italic; color: var(--gold-light); }
+  .hero-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.05rem, 2.2vw, 1.4rem);
+    font-style: italic;
+    color: rgba(245,240,232,0.72);
+    margin-bottom: 3rem;
+    line-height: 1.5;
+  }
+  .hero-locs {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 0.66rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .hero-locs span::after { content: '·'; margin-left: 1.5rem; color: rgba(184,147,90,0.35); }
+  .hero-locs span:last-child::after { content: ''; }
+  .scroll-hint {
+    position: absolute; bottom: 2.5rem; left: 50%;
+    transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+    color: rgba(245,240,232,0.4);
+    font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase;
+    animation: bob 2.5s ease-in-out infinite;
+  }
+  @keyframes bob {
+    0%,100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(7px); }
+  }
+
+  /* ─── NAV ─────────────────────────────────────── */
+  .nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(26,26,24,0.96);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--divider);
+    padding: 0 2rem;
+  }
+  .nav-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; gap: 0;
+    overflow-x: auto; scrollbar-width: none;
+    padding: 0.8rem 0;
+  }
+  .nav-inner::-webkit-scrollbar { display: none; }
+  .nav-label {
+    font-size: 0.58rem; letter-spacing: 0.32em; text-transform: uppercase;
+    color: var(--gold); white-space: nowrap;
+    padding-right: 1.5rem; margin-right: 1.5rem;
+    border-right: 1px solid var(--divider); flex-shrink: 0;
+  }
+  .nav a {
+    font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: rgba(245,240,232,0.5); text-decoration: none;
+    white-space: nowrap; transition: color 0.2s; flex-shrink: 0;
+    padding: 0 1rem;
+  }
+  .nav a:hover { color: var(--gold-light); }
+  .nav a + a { border-left: 1px solid rgba(184,147,90,0.12); }
+
+  /* ─── LOCATION CINEMATIC HEADER ───────────────── */
+  .location { padding: 0 0 7rem; }
+  .loc-header {
+    height: 72vh; min-height: 480px;
+    position: relative; display: flex; align-items: flex-end; overflow: hidden;
+  }
+  .loc-bg {
+    position: absolute; inset: 0;
+    background-size: cover; background-position: center;
+    filter: brightness(0.45) saturate(0.8);
+  }
+  .loc-gradient {
+    position: absolute; inset: 0;
+    background: linear-gradient(to bottom, transparent 25%, rgba(26,26,24,0.93) 100%);
+  }
+  .loc-header-content {
+    position: relative;
+    padding: 3rem 4rem;
+    max-width: 860px;
+    animation: fadeUp 0.7s ease both;
+  }
+  .loc-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 5.5rem; font-weight: 700; font-style: italic;
+    color: rgba(184,147,90,0.12); line-height: 1;
+    margin-bottom: -1.2rem;
+  }
+  .loc-eyebrow {
+    font-size: 0.6rem; letter-spacing: 0.36em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 0.5rem;
+  }
+  .loc-name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 6vw, 4.8rem);
+    font-weight: 400; color: var(--white); line-height: 1.0;
+    margin-bottom: 0.7rem;
+  }
+  .loc-tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-style: italic; color: rgba(245,240,232,0.68);
+    max-width: 580px; line-height: 1.55;
+  }
+  .loc-meta {
+    display: flex; gap: 0.8rem; margin-top: 1.4rem; flex-wrap: wrap;
+  }
+  .meta-tag {
+    font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--gold-light);
+    background: rgba(184,147,90,0.1);
+    border: 1px solid rgba(184,147,90,0.22);
+    padding: 0.3rem 0.85rem; border-radius: 1px;
+  }
+
+  /* ─── COMPONENT SECTIONS ──────────────────────── */
+  .components { max-width: 960px; margin: 0 auto; padding: 4rem 2rem 0; }
+
+  .component {
+    margin-bottom: 4.5rem;
+    border-left: 2px solid var(--divider);
+    padding-left: 2rem;
+  }
+
+  .component-label {
+    font-size: 0.58rem; letter-spacing: 0.38em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 0.6rem;
+    display: flex; align-items: center; gap: 0.8rem;
+  }
+  .component-label::after {
+    content: ''; flex: 1; height: 1px;
+    background: var(--divider); max-width: 80px;
+  }
+
+  .component-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem; font-weight: 400; color: var(--cream);
+    margin-bottom: 0.4rem; line-height: 1.15;
+  }
+
+  .component-website {
+    font-size: 0.68rem; letter-spacing: 0.1em;
+    color: var(--muted); text-decoration: none; margin-bottom: 1.5rem;
+    display: inline-block;
+    transition: color 0.2s;
+  }
+  .component-website:hover { color: var(--gold-light); }
+
+  /* PHOTO: full-width for each component */
+  .component-photo {
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1.8rem;
+    border-radius: 1px;
+  }
+  .component-photo img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.7s ease;
+    position: absolute;
+  }
+  .component:hover .component-photo img { transform: scale(1.03); }
+
+  .photo-credit {
+    position: absolute; bottom: 0.75rem; right: 0.75rem;
+    font-size: 0.55rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
+    background: rgba(26,26,24,0.65);
+    backdrop-filter: blur(4px);
+    padding: 0.25rem 0.6rem;
+    border-radius: 1px;
+  }
+
+  /* DETAILS */
+  .component-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  @media (max-width: 700px) {
+    .component-body { grid-template-columns: 1fr; }
+    .loc-header-content { padding: 2rem; }
+  }
+
+  .details-list { list-style: none; }
+  .details-list li {
+    font-size: 0.88rem; color: rgba(245,240,232,0.78);
+    line-height: 1.55; padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(184,147,90,0.1);
+    display: flex; gap: 0.7rem; align-items: flex-start;
+  }
+  .details-list li:last-child { border-bottom: none; }
+  .details-list li::before {
+    content: '→'; color: var(--gold); flex-shrink: 0;
+    font-size: 0.75rem; margin-top: 0.2rem;
+  }
+
+  /* REVIEW PANEL */
+  .review-panel {
+    background: rgba(184,147,90,0.05);
+    border: 1px solid rgba(184,147,90,0.18);
+    padding: 1.4rem 1.5rem;
+    border-radius: 1px;
+  }
+  .review-header {
+    display: flex; align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    flex-wrap: wrap; gap: 0.5rem;
+  }
+  .review-stars {
+    display: flex; gap: 2px;
+    align-items: center;
+  }
+  .star { color: var(--gold); font-size: 0.9rem; }
+  .star-empty { color: rgba(184,147,90,0.3); font-size: 0.9rem; }
+  .review-score {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem; color: var(--cream);
+    margin-right: 0.5rem;
+  }
+  .review-count {
+    font-size: 0.68rem; color: var(--muted);
+    letter-spacing: 0.05em;
+  }
+  .google-link {
+    font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--gold); text-decoration: none;
+    border: 1px solid rgba(184,147,90,0.3);
+    padding: 0.3rem 0.7rem; border-radius: 1px;
+    transition: background 0.2s;
+  }
+  .google-link:hover { background: rgba(184,147,90,0.12); }
+  .review-summary {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.0rem; font-style: italic;
+    color: rgba(245,240,232,0.72);
+    line-height: 1.65;
+    border-top: 1px solid rgba(184,147,90,0.15);
+    padding-top: 0.9rem;
+    margin-top: 0.2rem;
+  }
+  .review-quote {
+    font-size: 0.8rem; color: rgba(245,240,232,0.55);
+    margin-top: 0.8rem; font-style: normal;
+    padding-left: 0.8rem;
+    border-left: 2px solid rgba(184,147,90,0.25);
+    line-height: 1.55;
+  }
+
+  /* PRICE + PERMIT BARS */
+  .price-bar {
+    margin-top: 1.5rem;
+    padding: 0.9rem 1.2rem;
+    background: rgba(184,147,90,0.06);
+    border: 1px solid rgba(184,147,90,0.15);
+    display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+  }
+  .price-label {
+    font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--gold); flex-shrink: 0;
+  }
+  .price-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem; color: var(--cream); font-style: italic;
+  }
+
+  .permit-alert {
+    margin-top: 1rem;
+    padding: 0.9rem 1.2rem;
+    background: rgba(184,147,90,0.07);
+    border-left: 3px solid var(--gold);
+    font-size: 0.8rem;
+    color: rgba(245,240,232,0.72);
+    line-height: 1.55;
+  }
+  .permit-alert strong { color: var(--gold-light); font-weight: 500; }
+
+  /* BUDGET SUMMARY */
+  .budget-summary {
+    max-width: 960px; margin: 3rem auto 0;
+    padding: 0 2rem;
+  }
+  .budget-inner {
+    background: rgba(184,147,90,0.05);
+    border: 1px solid rgba(184,147,90,0.2);
+    padding: 1.4rem 2rem;
+    display: flex; align-items: center;
+    justify-content: space-between; gap: 2rem; flex-wrap: wrap;
+  }
+  .budget-left { }
+  .budget-tag {
+    font-size: 0.58rem; letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 0.3rem;
+  }
+  .budget-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem; font-style: italic; color: var(--cream);
+  }
+  .budget-note {
+    font-size: 0.8rem; color: var(--muted); max-width: 480px; line-height: 1.55;
+  }
+
+  /* SECTION DIVIDER */
+  .section-div {
+    max-width: 960px; margin: 0 auto; padding: 0 2rem;
+    display: flex; align-items: center; gap: 1.2rem;
+  }
+  .div-line { flex: 1; height: 1px; background: var(--divider); }
+  .div-gem { color: var(--gold); font-size: 0.75rem; opacity: 0.5; }
+
+  /* CLOSING */
+  .closing {
+    padding: 9rem 2rem; text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .closing-bg {
+    position: absolute; inset: 0;
+    background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1800&q=85&fit=crop');
+    background-size: cover; background-position: center;
+    filter: brightness(0.2) saturate(0.6);
+  }
+  .closing-content { position: relative; max-width: 680px; margin: 0 auto; }
+  .closing h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 400; font-style: italic;
+    color: var(--white); margin-bottom: 1.2rem; line-height: 1.1;
+  }
+  .closing p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem; color: rgba(245,240,232,0.65);
+    font-style: italic; line-height: 1.7; margin-bottom: 2.5rem;
+  }
+  .closing-date {
+    font-size: 0.66rem; letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--gold-light);
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <!-- Replace hero-bg background-image inline style if desired:
+       style="background-image:url('YOUR_HERO_IMAGE_URL')"  -->
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Colorado Elopement Weekend · [EVENT DATE RANGE]</p>
+    <h1>Six Places<br>to Say <em>I Do</em></h1>
+    <p class="hero-sub">A curated guide to the most beautiful corners of Colorado —<br>each one built around your weekend, your style, your story</p>
+    <div class="hero-locs">
+      <!-- Add one <span> per location -->
+      <span>[Location 1]</span>
+      <span>[Location 2]</span>
+      <span>[Location 3]</span>
+      <span>[Location 4]</span>
+      <span>[Location 5]</span>
+      <span>[Location 6]</span>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <svg width="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    Scroll
+  </div>
+</section>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <span class="nav-label">Locations</span>
+    <!-- Add one <a> per location; href="#location-id" must match section id below -->
+    <a href="#location1">[Location 1]</a>
+    <a href="#location2">[Location 2]</a>
+    <a href="#location3">[Location 3]</a>
+    <a href="#location4">[Location 4]</a>
+    <a href="#location5">[Location 5]</a>
+    <a href="#location6">[Location 6]</a>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════
+     0X · [LOCATION NAME]
+     Copy this entire <section> block for each new location.
+     Update: id, loc-num, loc-eyebrow, loc-name, loc-tagline, loc-meta,
+             and all four component blocks below.
+═══════════════════════════════════ -->
+<section class="location" id="location1">
+  <div class="loc-header">
+    <div class="loc-bg" style="background-image:url('[LOCATION_HEADER_IMAGE_URL]')"></div>
+    <div class="loc-gradient"></div>
+    <div class="loc-header-content">
+      <div class="loc-num">01</div>
+      <p class="loc-eyebrow">[Location Vibe / Category]</p>
+      <h2 class="loc-name">[Location Name]</h2>
+      <p class="loc-tagline">[One or two sentences describing what makes this location special for an elopement]</p>
+      <div class="loc-meta">
+        <span class="meta-tag">[X hrs from Denver]</span>
+        <span class="meta-tag">[Elevation] ft elevation</span>
+        <span class="meta-tag">Est. $[LOW]–[HIGH]</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="components">
+
+    <!-- ── LODGING ─────────────────────────────── -->
+    <div class="component">
+      <div class="component-label">Lodging</div>
+      <h3 class="component-name">[Hotel / Inn / B&B Name]</h3>
+      <a class="component-website" href="[WEBSITE_URL]" target="_blank">[website.com] · [Street Address] · [Phone]</a>
+      <div class="component-photo">
+        <img src="[LODGING_IMAGE_URL]" alt="[Alt text]">
+        <span class="photo-credit">[Credit / Caption]</span>
+      </div>
+      <div class="component-body">
+        <ul class="details-list">
+          <li>[Key detail about the property — character, rooms, setting]</li>
+          <li>[Amenities — hot tub, breakfast, spa, etc.]</li>
+          <li>[Proximity to ceremony site or downtown]</li>
+          <li>[What makes it right for a couple / elopement weekend]</li>
+          <li>[Any caveats or booking notes]</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">[4.X]</span>
+              <!-- Fill stars: use .star for filled, .star-empty for empty -->
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+              <span class="review-count">&nbsp;· [N] Google / TripAdvisor reviews</span>
+            </div>
+            <a class="google-link" href="[GOOGLE_MAPS_URL]" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">[2–4 sentence synthesis of what reviewers consistently praise and any caveats worth noting.]</div>
+          <div class="review-quote">"[Direct quote from a real review.]" — [Source]</div>
+        </div>
+      </div>
+      <div class="price-bar">
+        <span class="price-label">Estimated Rate</span>
+        <span class="price-value">~$[LOW]–[HIGH] / night · 3 nights</span>
+      </div>
+    </div>
+
+    <!-- ── FRIDAY DINNER ───────────────────────── -->
+    <div class="component">
+      <div class="component-label">Friday Dinner</div>
+      <h3 class="component-name">[Restaurant Name]</h3>
+      <a class="component-website" href="[WEBSITE_URL]" target="_blank">[website.com] · [Street Address] · [Phone]</a>
+      <div class="component-photo">
+        <img src="[DINNER_IMAGE_URL]" alt="[Alt text]">
+        <span class="photo-credit">[Credit / Caption]</span>
+      </div>
+      <div class="component-body">
+        <ul class="details-list">
+          <li>[Cuisine type / concept — farm-to-table, fine dining, intimate bistro, etc.]</li>
+          <li>[What makes the atmosphere right for a celebratory arrival dinner]</li>
+          <li>[Signature dish or menu highlight worth ordering]</li>
+          <li>[Reservation lead time — how far out to book]</li>
+          <li>[Any private dining room or special occasion options]</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">[4.X]</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+              <span class="review-count">&nbsp;· [N] Google / TripAdvisor reviews</span>
+            </div>
+            <a class="google-link" href="[GOOGLE_MAPS_URL]" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">[2–4 sentence synthesis of atmosphere, food quality, and suitability for a romantic or celebratory dinner.]</div>
+          <div class="review-quote">"[Direct quote from a real review.]" — [Source]</div>
+        </div>
+      </div>
+      <div class="price-bar">
+        <span class="price-label">Estimated Cost</span>
+        <span class="price-value">~$[LOW]–[HIGH] for two · [reservations recommended / required]</span>
+      </div>
+    </div>
+
+    <!-- ── CEREMONY ────────────────────────────── -->
+    <div class="component">
+      <div class="component-label">Ceremony</div>
+      <h3 class="component-name">[Ceremony Site Name]</h3>
+      <a class="component-website" href="[PERMIT_OR_SITE_URL]" target="_blank">[permit-agency.gov] · [Location / Address] · [Phone]</a>
+      <div class="component-photo">
+        <img src="[CEREMONY_IMAGE_URL]" alt="[Alt text]">
+        <span class="photo-credit">[Credit / Caption]</span>
+      </div>
+      <div class="component-body">
+        <ul class="details-list">
+          <li>[What the setting looks like — the view, the features, the scale]</li>
+          <li>[Permit requirements — who issues it, how to apply, timeline]</li>
+          <li>[Permit cost and any limitations — group size, no alcohol, etc.]</li>
+          <li>[Best time of day / lighting conditions for ceremony]</li>
+          <li>[Photographer permit requirements if applicable]</li>
+          <li>[Any logistical notes — parking, accessibility, shuttle, etc.]</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">[4.X]</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              <span class="review-count">&nbsp;· [Visitor / photographer reviews]</span>
+            </div>
+            <a class="google-link" href="[GOOGLE_MAPS_URL]" target="_blank">Google Maps ↗</a>
+          </div>
+          <div class="review-summary">[What photographers and couples consistently say about this site — visuals, mood, uniqueness, crowd level.]</div>
+          <div class="review-quote">"[Direct quote from a photographer or couple.]" — [Photographer / Source]</div>
+        </div>
+      </div>
+      <!-- Remove permit-alert if not time-sensitive -->
+      <div class="permit-alert">
+        ⚠ <strong>[Time-Sensitive Note if applicable:]</strong> [Describe the urgency — permits open X months in advance, limited slots per month, etc.]
+      </div>
+      <div class="price-bar">
+        <span class="price-label">Permit Fee</span>
+        <span class="price-value">$[AMOUNT] · [permit-agency.gov]</span>
+      </div>
+    </div>
+
+    <!-- ── SATURDAY ADVENTURE ──────────────────── -->
+    <div class="component">
+      <div class="component-label">Saturday Adventure</div>
+      <h3 class="component-name">[Activity / Company Name]</h3>
+      <a class="component-website" href="[WEBSITE_URL]" target="_blank">[website.com] · [Location / Address] · [Phone]</a>
+      <div class="component-photo">
+        <img src="[ADVENTURE_IMAGE_URL]" alt="[Alt text]">
+        <span class="photo-credit">[Credit / Caption]</span>
+      </div>
+      <div class="component-body">
+        <ul class="details-list">
+          <li>[What the experience is — the activity, where it takes place, how long]</li>
+          <li>[The guide / pilot / host — credentials, personality, what makes them special]</li>
+          <li>[What's included — breakfast, champagne, photos, certificate, etc.]</li>
+          <li>[Private / exclusive option available — details and how to request]</li>
+          <li>[Alt option if applicable — second activity worth considering instead]</li>
+          <li>[Booking notes — how far in advance, weather policy, cancellation]</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">[4.X]</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              <span class="review-count">&nbsp;· [N] reviews · [Platform]</span>
+            </div>
+            <a class="google-link" href="[GOOGLE_MAPS_URL]" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">[2–4 sentence synthesis — what couples and honeymooners say about this experience, what makes it memorable.]</div>
+          <div class="review-quote">"[Direct quote from a real review.]" — [Source]</div>
+        </div>
+      </div>
+      <div class="price-bar">
+        <span class="price-label">Estimated Cost</span>
+        <span class="price-value">~$[LOW]–[HIGH] / person · [private charter extra / included]</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="budget-summary">
+    <div class="budget-inner">
+      <div class="budget-left">
+        <div class="budget-tag">Weekend Budget Estimate</div>
+        <div class="budget-num">$[LOW] – $[HIGH]</div>
+      </div>
+      <div class="budget-note">[2–3 sentences: which line items drive the range, what to book first, any trade-offs worth noting. Include the Friday dinner in the total.]</div>
+    </div>
+  </div>
+</section>
+
+<!-- Section divider — paste between every location -->
+<div class="section-div"><div class="div-line"></div><span class="div-gem">✦</span><div class="div-line"></div></div>
+
+
+<!-- ═══════════════════════════════════
+     0X · [NEXT LOCATION] — paste another full <section> block here
+═══════════════════════════════════ -->
+
+
+<!-- CLOSING -->
+<section class="closing">
+  <div class="closing-bg"></div>
+  <div class="closing-content">
+    <p style="font-size:0.66rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;">Colorado · [CEREMONY DATE]</p>
+    <h2>Here's to Forever</h2>
+    <p>Six places. One perfect weekend. Whichever corner of Colorado you choose, the mountains — or the vines — will bear witness.</p>
+    <div class="closing-date">Full vendor details, booking checklists & budget breakdowns in each location's planning document</div>
+  </div>
+</section>
+
+</body>
+</html>
