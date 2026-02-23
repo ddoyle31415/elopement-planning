@@ -29,4 +29,3 @@
 
 ## Couples Massage
 - [Yarrow, an Auberge Spa at Hotel Jerome](https://auberge.com/hotel-jerome/wellness/spa/) — 5-star alpine-inspired boutique spa with customizable botanical treatments at Aspen's iconic Hotel Jerome — ~$543/person (90 min, incl. 22% service charge), ~$1,086 total
-    - Photo: https://dreffui1gbt6t.cloudfront.net/images/hj/HJE_Spa_Fall-2025_Image-Feature_Asset-3_Mobile.jpg
