@@ -231,20 +231,26 @@
   }
   .component-website:hover { color: var(--gold-light); }
 
-  /* PHOTO GALLERY: multiple photos for each component */
+  /* PHOTO GALLERY: carousel showing one photo at a time */
   .component-photo-gallery {
     margin-bottom: 1.8rem;
   }
   .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 0.8rem;
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 1px;
   }
   .gallery-item {
-    height: 200px;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    height: 100%;
     overflow: hidden;
-    position: relative;
-    border-radius: 1px;
+  }
+  .gallery-item.active {
+    opacity: 1;
   }
   .gallery-item img {
     width: 100%;
@@ -254,6 +260,60 @@
     transition: transform 0.7s ease;
   }
   .gallery-item:hover img { transform: scale(1.03); }
+
+  /* Gallery navigation controls */
+  .gallery-controls {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    pointer-events: none;
+    z-index: 10;
+  }
+  .gallery-arrow {
+    pointer-events: all;
+    background: rgba(184, 147, 90, 0.8);
+    border: none;
+    color: var(--white);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: inherit;
+  }
+  .gallery-arrow:hover {
+    background: var(--gold);
+    transform: scale(1.1);
+  }
+  .gallery-arrow:active {
+    transform: scale(0.95);
+  }
+
+  /* Gallery counter */
+  .gallery-counter {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(26, 26, 24, 0.75);
+    backdrop-filter: blur(4px);
+    color: var(--gold-light);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    z-index: 10;
+    pointer-events: none;
+  }
 
   .photo-credit {
     position: absolute; bottom: 0.75rem; right: 0.75rem;
@@ -1650,6 +1710,78 @@
     <div class="closing-date">Full vendor details, booking checklists & budget breakdowns in each location's planning document</div>
   </div>
 </section>
+
+<script>
+  // Initialize gallery carousels
+  function initializeGalleries() {
+    const galleries = document.querySelectorAll('.gallery-grid');
+
+    galleries.forEach((gallery) => {
+      const items = gallery.querySelectorAll('.gallery-item');
+
+      // Skip if only one item
+      if (items.length <= 1) return;
+
+      let currentIndex = 0;
+
+      // Create navigation controls
+      const controls = document.createElement('div');
+      controls.className = 'gallery-controls';
+
+      const prevBtn = document.createElement('button');
+      prevBtn.className = 'gallery-arrow';
+      prevBtn.innerHTML = '&#8249;';
+      prevBtn.setAttribute('aria-label', 'Previous photo');
+
+      const nextBtn = document.createElement('button');
+      nextBtn.className = 'gallery-arrow';
+      nextBtn.innerHTML = '&#8250;';
+      nextBtn.setAttribute('aria-label', 'Next photo');
+
+      const counter = document.createElement('div');
+      counter.className = 'gallery-counter';
+      counter.textContent = `1 / ${items.length}`;
+
+      controls.appendChild(prevBtn);
+      controls.appendChild(nextBtn);
+      controls.appendChild(counter);
+      gallery.appendChild(controls);
+
+      // Set first item as active
+      items[0].classList.add('active');
+
+      // Navigation functions
+      function showItem(index) {
+        items.forEach(item => item.classList.remove('active'));
+        items[index].classList.add('active');
+        counter.textContent = `${index + 1} / ${items.length}`;
+      }
+
+      function nextGallery() {
+        currentIndex = (currentIndex + 1) % items.length;
+        showItem(currentIndex);
+      }
+
+      function prevGallery() {
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        showItem(currentIndex);
+      }
+
+      // Event listeners
+      nextBtn.addEventListener('click', nextGallery);
+      prevBtn.addEventListener('click', prevGallery);
+
+      // Keyboard navigation (arrow keys only when hovering)
+      gallery.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') nextGallery();
+        if (e.key === 'ArrowLeft') prevGallery();
+      });
+    });
+  }
+
+  // Initialize on load
+  document.addEventListener('DOMContentLoaded', initializeGalleries);
+</script>
 
 </body>
 </html>
