@@ -325,6 +325,268 @@
     border-radius: 1px;
   }
 
+  /* ALTERNATIVES: additional vendor options */
+  .component-alternatives {
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--divider);
+  }
+  .alternative-section-title {
+    font-size: 0.58rem;
+    letter-spacing: 0.38em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .alternative-section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--divider);
+    max-width: 80px;
+  }
+  .alternative-option {
+    margin-bottom: 2rem;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .alternative-option:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .alternative-label {
+    font-size: 0.58rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.38em;
+    color: var(--gold);
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .alternative-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(184,147,90,0.2);
+    max-width: 40px;
+  }
+  .alternative-option h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--cream);
+    margin-bottom: 0.4rem;
+    line-height: 1.15;
+  }
+  .alternative-option a {
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    transition: color 0.2s;
+  }
+  .alternative-option a:hover { color: var(--gold-light); }
+
+  /* ALTERNATIVE PHOTO GALLERY */
+  .alternative-photo-gallery {
+    margin-bottom: 1.8rem;
+    position: relative;
+  }
+  .alternative-gallery-grid {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 1px;
+  }
+  .alternative-gallery-item {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    height: 100%;
+    overflow: hidden;
+  }
+  .alternative-gallery-item.active { opacity: 1; }
+  .alternative-gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.7s ease;
+  }
+  .alternative-gallery-item:hover img { transform: scale(1.03); }
+  .alternative-gallery-controls {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    z-index: 10;
+  }
+  .alternative-gallery-arrow {
+    pointer-events: all;
+    background: rgba(184, 147, 90, 0.8);
+    border: none;
+    color: var(--white);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: inherit;
+  }
+  .alternative-gallery-arrow:hover {
+    background: var(--gold);
+    transform: scale(1.1);
+  }
+  .alternative-gallery-arrow:active {
+    transform: scale(0.95);
+  }
+  .alternative-gallery-counter {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(26, 26, 24, 0.75);
+    backdrop-filter: blur(4px);
+    color: var(--gold-light);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  /* ALTERNATIVE DETAILS & REVIEW LAYOUT */
+  .alternative-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  @media (max-width: 700px) {
+    .alternative-body { grid-template-columns: 1fr; }
+  }
+  .alternative-details-list {
+    list-style: none;
+  }
+  .alternative-details-list li {
+    font-size: 0.88rem;
+    color: rgba(245,240,232,0.78);
+    line-height: 1.55;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(184,147,90,0.1);
+    display: flex;
+    gap: 0.7rem;
+    align-items: flex-start;
+  }
+
+  /* Use primary review panel styling for alternatives */
+  .alternative-review-panel {
+    background: rgba(184,147,90,0.06);
+    padding: 1.2rem;
+    border-radius: 1px;
+  }
+  .alternative-review-panel .review-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .alternative-review-panel .review-stars {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+  }
+  .alternative-review-panel .star {
+    color: var(--gold);
+    font-size: 0.9rem;
+  }
+  .alternative-review-panel .star-empty {
+    color: rgba(184,147,90,0.3);
+    font-size: 0.9rem;
+  }
+  .alternative-review-panel .review-score {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: var(--cream);
+    margin-right: 0.5rem;
+  }
+  .alternative-review-panel .review-count {
+    font-size: 0.68rem;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+  }
+  .alternative-review-panel .google-link {
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: none;
+    border: 1px solid rgba(184,147,90,0.3);
+    padding: 0.3rem 0.7rem;
+    border-radius: 1px;
+    transition: background 0.2s;
+  }
+  .alternative-review-panel .google-link:hover {
+    background: rgba(184,147,90,0.12);
+  }
+  .alternative-review-panel .review-summary {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.0rem;
+    font-style: italic;
+    color: rgba(245,240,232,0.72);
+    line-height: 1.65;
+    border-top: 1px solid rgba(184,147,90,0.15);
+    padding-top: 0.9rem;
+    margin-top: 0.2rem;
+  }
+
+  /* ALTERNATIVE PRICE BAR - unified with primary */
+  .alternative-price-bar {
+    margin-top: 1.5rem;
+    padding: 0.9rem 1.2rem;
+    background: rgba(184,147,90,0.06);
+    border: 1px solid rgba(184,147,90,0.15);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .alternative-price-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    flex-shrink: 0;
+  }
+  .alternative-price-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--cream);
+    font-style: italic;
+  }
+
   /* DETAILS */
   .component-body {
     display: grid;
@@ -635,6 +897,49 @@
         <span class="price-label">Estimated Cost</span>
         <span class="price-value">~$150–$200 per person · reservations required</span>
       </div>
+
+      <div class="component-alternatives">
+        <div class="alternative-section-title">Alternative Friday Dinner</div>
+        <div class="alternative-option">
+          <span class="alternative-label">Secondary Option</span>
+          <h4>The Monarch</h4>
+          <a href="https://themonarchrestaurant.com/" target="_blank">themonarchrestaurant.com · Aspen, Colorado</a>
+          <div class="alternative-photo-gallery">
+            <div class="alternative-gallery-grid">
+              <div class="alternative-gallery-item active"><img src="https://images.squarespace-cdn.com/content/v1/56ddf13c0442628280783896/1460153991386-LLHHOZXYXIDTNXQXWZP1/MONARCH_hero+%281%29.jpg?format=2500w" alt="The Monarch interior"></div>
+              <div class="alternative-gallery-item"><img src="https://lh3.googleusercontent.com/p/AF1QipMIF328LdDaf_qreUFQ2aDRsH75PT1yL63wNOoZ=s1360-w1360-h1020-rw" alt="The Monarch dining"></div>
+            </div>
+            <div class="alternative-gallery-controls">
+              <button class="alternative-gallery-arrow">←</button>
+              <button class="alternative-gallery-arrow">→</button>
+            </div>
+            <div class="alternative-gallery-counter"><span class="current-photo">1</span> / <span class="total-photos">2</span></div>
+          </div>
+          <div class="alternative-body">
+            <ul class="alternative-details-list">
+              <li>→ Classic upscale steakhouse with London gentleman's club vibes</li>
+              <li>→ Tableside Caesar salad, prime cuts, award-winning wine list</li>
+              <li>→ Intimate, sophisticated atmosphere ideal for special occasions</li>
+              <li>→ Excellent service and refined dining experience</li>
+            </ul>
+            <div class="alternative-review-panel">
+              <div class="review-header">
+                <div class="review-stars">
+                  <span class="review-score">4.2</span>
+                  <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+                  <span class="review-count">&nbsp;· Google</span>
+                </div>
+                <a class="google-link" href="https://www.google.com/maps/place/The+Monarch+Restaurant" target="_blank">Google Reviews ↗</a>
+              </div>
+              <div class="review-summary">Reviewers consistently praise the elegant atmosphere, impeccable service, and high-quality steaks. The sophisticated decor and exceptional wine list are frequently highlighted as standout features. Guests appreciate the refined dining experience and recommend it for special occasions and celebrations.</div>
+            </div>
+          </div>
+          <div class="alternative-price-bar">
+            <span class="alternative-price-label">Estimated Cost</span>
+            <span class="alternative-price-value">~$100–$175 per person</span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- ── CEREMONY ────────────────────────────── -->
@@ -675,6 +980,49 @@
       <div class="price-bar">
         <span class="price-label">Permit Fee</span>
         <span class="price-value">$200 · 2-hour ceremony slot</span>
+      </div>
+
+      <div class="component-alternatives">
+        <div class="alternative-section-title">Alternative Ceremony Location</div>
+        <div class="alternative-option">
+          <span class="alternative-label">Secondary Option</span>
+          <h4>Independence Pass</h4>
+          <a href="https://www.aspenchamber.org/blog/eloping-maroon-bells-everything-you-need-know" target="_blank">aspenchamber.org · Aspen, Colorado</a>
+          <div class="alternative-photo-gallery">
+            <div class="alternative-gallery-grid">
+              <div class="alternative-gallery-item active"><img src="https://wethelightphotography.com/wp-content/uploads/colorado_adventure_elopement_photographer_0217-scaled-1.jpg" alt="Independence Pass scenic overlook"></div>
+              <div class="alternative-gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRZ4oIgDUfVUndeYvnu2fXnsN1IT_WHObCiw&s" alt="Independence Pass mountain views"></div>
+            </div>
+            <div class="alternative-gallery-controls">
+              <button class="alternative-gallery-arrow">←</button>
+              <button class="alternative-gallery-arrow">→</button>
+            </div>
+            <div class="alternative-gallery-counter"><span class="current-photo">1</span> / <span class="total-photos">2</span></div>
+          </div>
+          <div class="alternative-body">
+            <ul class="alternative-details-list">
+              <li>→ High alpine pass at 12,095 ft with dramatic Maroon Peak views</li>
+              <li>→ Stunning overlooks, waterfalls, and pristine alpine scenery</li>
+              <li>→ Challenging but beautiful drive ideal for adventure-seeking couples</li>
+              <li>→ Exceptional photography potential with dramatic mountain backdrops</li>
+            </ul>
+            <div class="alternative-review-panel">
+              <div class="review-header">
+                <div class="review-stars">
+                  <span class="review-score">4.8</span>
+                  <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                  <span class="review-count">&nbsp;· AllTrails</span>
+                </div>
+                <a class="google-link" href="https://www.alltrails.com/trail/colorado/pitkin-county/independence-pass" target="_blank">AllTrails ↗</a>
+              </div>
+              <div class="review-summary">Highly rated for dramatic scenic beauty, particularly the overlooks and waterfalls. Reviewers highlight the challenging and beautiful drive, especially for adventure seekers. The pass is frequently mentioned as one of Colorado's most scenic routes, ideal for elopement photography and memorable moments.</div>
+            </div>
+          </div>
+          <div class="price-bar">
+            <span class="price-label">Permit Fee</span>
+            <span class="price-value">~$10 · parking permit only</span>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -1021,6 +1369,48 @@
         <span class="price-label">Estimated Cost</span>
         <span class="price-value">~$150–$200 per person · reservations recommended</span>
       </div>
+
+      <div class="component-alternatives">
+        <div class="alternative-section-title">Alternative Friday Dinner</div>
+        <div class="alternative-option">
+          <span class="alternative-label">Secondary Option</span>
+          <h4>Harvest to Home</h4>
+          <a href="https://www.harvesttohomepcs.com" target="_blank">harvesttohomepcs.com · Estes Park, Colorado</a>
+          <div class="alternative-photo-gallery">
+            <div class="alternative-gallery-grid">
+              <div class="alternative-gallery-item active"><img src="https://www.rangedowntown.com/resourcefiles/private-dining-slider/range-private-event.jpg" alt="Private chef dining setup"></div>
+            </div>
+            <div class="alternative-gallery-controls">
+              <button class="alternative-gallery-arrow">←</button>
+              <button class="alternative-gallery-arrow">→</button>
+            </div>
+            <div class="alternative-gallery-counter"><span class="current-photo">1</span> / <span class="total-photos">1</span></div>
+          </div>
+          <div class="alternative-body">
+            <ul class="alternative-details-list">
+              <li>→ Private chef catering service with farm-to-table Colorado cuisine</li>
+              <li>→ Customized multi-course dinners tailored to your preferences</li>
+              <li>→ Chef Jenn praised for kindness, flexibility, and attention to dietary needs</li>
+              <li>→ Perfect for ultra-intimate, personalized dining at your lodging</li>
+            </ul>
+            <div class="alternative-review-panel">
+              <div class="review-header">
+                <div class="review-stars">
+                  <span class="review-score">5.0</span>
+                  <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                  <span class="review-count">&nbsp;· Google</span>
+                </div>
+                <a class="google-link" href="https://www.google.com/maps/place/Harvest+to+Home" target="_blank">Google Reviews ↗</a>
+              </div>
+              <div class="review-summary">Highly praised private chef service specializing in farm-to-table, locally-sourced Colorado cuisine. Chef Jenn is noted for her kindness, flexibility, and ability to tailor menus to specific dietary needs. Perfect for intimate elopement dinners and micro-weddings.</div>
+            </div>
+          </div>
+          <div class="price-bar">
+            <span class="price-label">Estimated Cost</span>
+            <span class="price-value">$200–$400+ for two · depends on menu</span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- ── CEREMONY ────────────────────────────── -->
@@ -1214,6 +1604,49 @@
       <div class="price-bar">
         <span class="price-label">Estimated Cost</span>
         <span class="price-value">~$150–$250 per person · reservations essential</span>
+      </div>
+
+      <div class="component-alternatives">
+        <div class="alternative-section-title">Alternative Friday Dinner</div>
+        <div class="alternative-option">
+          <span class="alternative-label">Secondary Option</span>
+          <h4>Huntington House Tavern</h4>
+          <a href="https://www.grandlakelodge.com/" target="_blank">grandlakelodge.com · Grand Lake, Colorado</a>
+          <div class="alternative-photo-gallery">
+            <div class="alternative-gallery-grid">
+              <div class="alternative-gallery-item active"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/d8/a8/2c/dining-view.jpg?w=900&h=500&s=1" alt="Huntington House dining views"></div>
+              <div class="alternative-gallery-item"><img src="https://www.grandlakelodge.com/wp-content/uploads/2025/03/GGLTue385.jpg" alt="Huntington House interior"></div>
+            </div>
+            <div class="alternative-gallery-controls">
+              <button class="alternative-gallery-arrow">←</button>
+              <button class="alternative-gallery-arrow">→</button>
+            </div>
+            <div class="alternative-gallery-counter"><span class="current-photo">1</span> / <span class="total-photos">2</span></div>
+          </div>
+          <div class="alternative-body">
+            <ul class="alternative-details-list">
+              <li>→ Panoramic Grand Lake and mountain views with wood-burning fireplace</li>
+              <li>→ Specialties include elk chops, filet mignon, lobster mac & cheese</li>
+              <li>→ Cozy, rustic ambiance with recently improved food quality</li>
+              <li>→ Friendly, attentive service in historic lodge setting</li>
+            </ul>
+            <div class="alternative-review-panel">
+              <div class="review-header">
+                <div class="review-stars">
+                  <span class="review-score">3.8</span>
+                  <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span><span class="star-empty">★</span>
+                  <span class="review-count">&nbsp;· TripAdvisor</span>
+                </div>
+                <a class="google-link" href="https://www.google.com/maps/place/Huntington+House+Tavern" target="_blank">Google Reviews ↗</a>
+              </div>
+              <div class="review-summary">This tavern features stunning Grand Lake and mountain views with cozy, rustic ambiance and a wood-burning fireplace. Recent reviews praise improved food quality, with highlights including lobster mac & cheese and elk chops, plus friendly, attentive service. Pricing is high but justified by food and views.</div>
+            </div>
+          </div>
+          <div class="price-bar">
+            <span class="price-label">Estimated Cost</span>
+            <span class="price-value">~$150–$250 per person</span>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -1449,6 +1882,49 @@
         <span class="price-label">Permit Fee</span>
         <span class="price-value">$150–$300 · NPS Special Use Permit (if required)</span>
       </div>
+
+      <div class="component-alternatives">
+        <div class="alternative-section-title">Alternative Ceremony Location</div>
+        <div class="alternative-option">
+          <span class="alternative-label">Secondary Option</span>
+          <h4>Rocky Mountain Wedding Park</h4>
+          <a href="https://www.rockymountainweddingpark.com" target="_blank">rockymountainweddingpark.com · Colorado</a>
+          <div class="alternative-photo-gallery">
+            <div class="alternative-gallery-grid">
+              <div class="alternative-gallery-item active"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlT0n8TTO5fpUpMOeb4uRbvMVZkZ0gZj8WIg&s" alt="Rocky Mountain Wedding Park views"></div>
+              <div class="alternative-gallery-item"><img src="https://authenticcollective.blog/wp-content/uploads/2022/11/Rocky-Mountain-National-Park-Wedding-7-681x1024.jpg" alt="Rocky Mountain Wedding Park ceremony"></div>
+            </div>
+            <div class="alternative-gallery-controls">
+              <button class="alternative-gallery-arrow">←</button>
+              <button class="alternative-gallery-arrow">→</button>
+            </div>
+            <div class="alternative-gallery-counter"><span class="current-photo">1</span> / <span class="total-photos">2</span></div>
+          </div>
+          <div class="alternative-body">
+            <ul class="alternative-details-list">
+              <li>→ Private wedding venue with landscaped gardens and mountain views</li>
+              <li>→ Dedicated event space with on-site facilities and private parking</li>
+              <li>→ More controlled setting than public lands with professional event support</li>
+              <li>→ Full amenities and flexible ceremony configuration options</li>
+            </ul>
+            <div class="alternative-review-panel">
+              <div class="review-header">
+                <div class="review-stars">
+                  <span class="review-score">4.6</span>
+                  <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+                  <span class="review-count">&nbsp;· Couples</span>
+                </div>
+                <a class="google-link" href="https://www.rockymountainweddingpark.com" target="_blank">Visit Site ↗</a>
+              </div>
+              <div class="review-summary">Praised as a beautiful alternative ceremony venue with scenic Colorado mountain views. Couples appreciate the flexibility and gorgeous outdoor setting. No public access ensures a private, controlled event environment with professional venue support and amenities.</div>
+            </div>
+          </div>
+          <div class="price-bar">
+            <span class="price-label">Venue Rental</span>
+            <span class="price-value">~$500–$800 · permits included</span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- ── SATURDAY ADVENTURE ──────────────────── -->
@@ -1603,6 +2079,50 @@
         <span class="price-label">Estimated Cost</span>
         <span class="price-value">~$150–$220 for two · reservations essential</span>
       </div>
+
+      <div class="component-alternatives">
+        <div class="alternative-section-title">Alternative Friday Dinner</div>
+        <div class="alternative-option">
+          <span class="alternative-label">Secondary Option</span>
+          <h4>Aurum Food & Wine</h4>
+          <a href="https://aurumsteamboat.com" target="_blank">aurumsteamboat.com · Steamboat Springs, Colorado</a>
+          <div class="alternative-photo-gallery">
+            <div class="alternative-gallery-grid">
+              <div class="alternative-gallery-item active"><img src="https://aurumsteamboat.com/wp-content/uploads/2023/02/restaurant_yurt.jpg" alt="Aurum riverfront dining"></div>
+              <div class="alternative-gallery-item"><img src="https://aurumsteamboat.com/wp-content/uploads/2023/02/aurum-food-wine-drinks-1-683x1024-1.jpg" alt="Aurum wine program"></div>
+              <div class="alternative-gallery-item"><img src="https://aurumsteamboat.com/wp-content/uploads/2023/02/aurum-food-wine-private-events-5.jpg" alt="Aurum private event space"></div>
+            </div>
+            <div class="alternative-gallery-controls">
+              <button class="alternative-gallery-arrow">←</button>
+              <button class="alternative-gallery-arrow">→</button>
+            </div>
+            <div class="alternative-gallery-counter"><span class="current-photo">1</span> / <span class="total-photos">3</span></div>
+          </div>
+          <div class="alternative-body">
+            <ul class="alternative-details-list">
+              <li>→ Stunning Yampa River views with unique riverfront location</li>
+              <li>→ Farm-to-table approach with creative, seasonal menu</li>
+              <li>→ Exceptional wine program with complimentary champagne for celebrations</li>
+              <li>→ Attentive service and romantic ambiance for special occasions</li>
+            </ul>
+            <div class="alternative-review-panel">
+              <div class="review-header">
+                <div class="review-stars">
+                  <span class="review-score">4.5</span>
+                  <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+                  <span class="review-count">&nbsp;· OpenTable / TripAdvisor</span>
+                </div>
+                <a class="google-link" href="https://www.google.com/maps/place/Aurum+Food+Wine" target="_blank">Google Reviews ↗</a>
+              </div>
+              <div class="review-summary">Aurum Food & Wine is praised for its stunning Yampa River views and farm-to-table approach. Guests consistently mention the attentive service, excellent wine program, and complimentary champagne for special occasions. The unique riverfront location and thoughtful preparations make it popular for celebrations.</div>
+            </div>
+          </div>
+          <div class="price-bar">
+            <span class="price-label">Estimated Cost</span>
+            <span class="price-value">~$130–$200 for two</span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- ── CEREMONY ────────────────────────────── -->
@@ -1680,6 +2200,49 @@
       <div class="price-bar">
         <span class="price-label">Estimated Cost</span>
         <span class="price-value">~$670–$800 for two · includes champagne & breakfast</span>
+      </div>
+
+      <div class="component-alternatives">
+        <div class="alternative-section-title">Alternative Saturday Adventure</div>
+        <div class="alternative-option">
+          <span class="alternative-label">Secondary Option</span>
+          <h4>Saddleback Ranch</h4>
+          <a href="https://www.saddlebackranch.net" target="_blank">saddlebackranch.net · Steamboat Springs, Colorado</a>
+          <div class="alternative-photo-gallery">
+            <div class="alternative-gallery-grid">
+              <div class="alternative-gallery-item active"><img src="https://saddlebackranch.net/wp-content/uploads/sites/7406/2018/05/Trail-riding-82.jpg?w=700&h=700&zoom=2" alt="Saddleback Ranch horseback riding"></div>
+              <div class="alternative-gallery-item"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/hc27O3Rkyd4vZ0H_iKh-Ig/348s.jpg" alt="Saddleback Ranch scenic trails"></div>
+            </div>
+            <div class="alternative-gallery-controls">
+              <button class="alternative-gallery-arrow">←</button>
+              <button class="alternative-gallery-arrow">→</button>
+            </div>
+            <div class="alternative-gallery-counter"><span class="current-photo">1</span> / <span class="total-photos">2</span></div>
+          </div>
+          <div class="alternative-body">
+            <ul class="alternative-details-list">
+              <li>→ Private 2-hour guided horseback ride through Yampa Valley</li>
+              <li>→ Beautiful scenery with well-cared-for horses and professional guides</li>
+              <li>→ Suitable for all experience levels including beginners</li>
+              <li>→ Active outdoor celebration with stunning mountain views and peaceful experience</li>
+            </ul>
+            <div class="alternative-review-panel">
+              <div class="review-header">
+                <div class="review-stars">
+                  <span class="review-score">4.9</span>
+                  <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                  <span class="review-count">&nbsp;· Google · 645 reviews</span>
+                </div>
+                <a class="google-link" href="https://www.google.com/maps/place/Saddleback+Ranch" target="_blank">Google Reviews ↗</a>
+              </div>
+              <div class="review-summary">Saddleback Ranch is highly rated for its beautiful scenery, well-cared-for horses, and knowledgeable, professional guides. Customers consistently praise the peaceful horseback riding experience through the Yampa Valley. Visitors highlight the scenic mountain views and the quality of the horses and equipment.</div>
+            </div>
+          </div>
+          <div class="price-bar">
+            <span class="price-label">Estimated Cost</span>
+            <span class="price-value">~$200–$300 for two · 2-hour guided ride</span>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -1779,8 +2342,68 @@
     });
   }
 
+  // Initialize alternative galleries (already have controls in markup)
+  function initializeAlternativeGalleries() {
+    const photoGalleries = document.querySelectorAll('.alternative-photo-gallery');
+
+    photoGalleries.forEach((photoContainer) => {
+      const gallery = photoContainer.querySelector('.alternative-gallery-grid');
+      const items = gallery.querySelectorAll('.alternative-gallery-item');
+
+      // Skip if only one item
+      if (items.length <= 1) return;
+
+      let currentIndex = 0;
+
+      // Get controls from existing markup
+      const controls = photoContainer.querySelector('.alternative-gallery-controls');
+      const counter = photoContainer.querySelector('.alternative-gallery-counter');
+
+      if (!controls) return;
+
+      // Set first item as active
+      items[0].classList.add('active');
+
+      // Navigation functions
+      function showItem(index) {
+        items.forEach(item => item.classList.remove('active'));
+        items[index].classList.add('active');
+
+        // Update counter display
+        const currentSpan = counter.querySelector('.current-photo');
+        if (currentSpan) currentSpan.textContent = index + 1;
+      }
+
+      function nextGallery() {
+        currentIndex = (currentIndex + 1) % items.length;
+        showItem(currentIndex);
+      }
+
+      function prevGallery() {
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        showItem(currentIndex);
+      }
+
+      // Get buttons from existing markup and add listeners
+      const buttons = controls.querySelectorAll('button');
+      if (buttons.length >= 2) {
+        buttons[0].addEventListener('click', prevGallery);
+        buttons[1].addEventListener('click', nextGallery);
+      }
+
+      // Keyboard navigation
+      gallery.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') nextGallery();
+        if (e.key === 'ArrowLeft') prevGallery();
+      });
+    });
+  }
+
   // Initialize on load
-  document.addEventListener('DOMContentLoaded', initializeGalleries);
+  document.addEventListener('DOMContentLoaded', () => {
+    initializeGalleries();
+    initializeAlternativeGalleries();
+  });
 </script>
 
 </body>
