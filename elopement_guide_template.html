@@ -693,6 +693,55 @@
   }
   .permit-alert strong { color: var(--gold-light); font-weight: 500; }
 
+  /* SECONDARY COMPONENTS (no photos) */
+  .secondary-component {
+    margin-bottom: 3rem;
+    border-left: 2px solid var(--divider);
+    padding-left: 2rem;
+  }
+  .secondary-component-label {
+    font-size: 0.58rem; letter-spacing: 0.38em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 0.6rem;
+    display: flex; align-items: center; gap: 0.8rem;
+  }
+  .secondary-component-label::after {
+    content: ''; flex: 1; height: 1px;
+    background: var(--divider); max-width: 80px;
+  }
+  .secondary-component h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem; font-weight: 400; color: var(--cream);
+    margin-bottom: 0.4rem; line-height: 1.15;
+  }
+  .secondary-component-website {
+    font-size: 0.68rem; letter-spacing: 0.1em;
+    color: var(--muted); text-decoration: none; margin-bottom: 1.2rem;
+    display: inline-block;
+    transition: color 0.2s;
+  }
+  .secondary-component-website:hover { color: var(--gold-light); }
+  .secondary-component-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  @media (max-width: 700px) {
+    .secondary-component-body { grid-template-columns: 1fr; }
+  }
+  .secondary-details-list { list-style: none; }
+  .secondary-details-list li {
+    font-size: 0.88rem; color: rgba(245,240,232,0.78);
+    line-height: 1.55; padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(184,147,90,0.1);
+    display: flex; gap: 0.7rem; align-items: flex-start;
+  }
+  .secondary-details-list li:last-child { border-bottom: none; }
+  .secondary-details-list li::before {
+    content: '→'; color: var(--gold); flex-shrink: 0;
+    font-size: 0.75rem; margin-top: 0.2rem;
+  }
+
   /* BUDGET SUMMARY */
   .budget-summary {
     max-width: 960px; margin: 3rem auto 0;
@@ -1063,6 +1112,33 @@
       </div>
     </div>
 
+    <!-- ── COUPLES MASSAGE ──────────────────────── -->
+    <div class="secondary-component">
+      <div class="secondary-component-label">Couples Massage</div>
+      <h4>Yarrow, an Auberge Spa</h4>
+      <a class="secondary-component-website" href="https://auberge.com/hotel-jerome/wellness/spa/" target="_blank">auberge.com · Hotel Jerome, Aspen</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>5-star alpine-inspired boutique spa at Aspen's iconic Hotel Jerome</li>
+          <li>Customizable botanical treatments tailored to your preferences</li>
+          <li>Professional and accommodating staff in tranquil alpine setting</li>
+          <li>Intimate boutique atmosphere perfect for couples</li>
+          <li>Book 2–3 weeks in advance for summer dates</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">4.6</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+              <span class="review-count">&nbsp;· Google</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/Yarrow+Spa+Hotel+Jerome" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">Guests praise the spa's professional and accommodating staff, the tranquil alpine-inspired setting, and the high-quality botanical treatments. The intimate boutique atmosphere and customizable treatment options are frequently highlighted as exceptional, making it a perfect complement to a luxury hotel experience.</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <div class="budget-summary">
@@ -1256,6 +1332,111 @@
       </div>
     </div>
 
+    <!-- ── COUPLES MASSAGE (THURSDAY) ───────────── -->
+    <div class="secondary-component">
+      <div class="secondary-component-label">Couples Massage</div>
+      <h4>Woodhouse Spa Boulder</h4>
+      <a class="secondary-component-website" href="https://www.woodhousespas.com/boulder" target="_blank">woodhousespas.com · Boulder</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>Welcoming spa with cozy and peaceful ambiance</li>
+          <li>Professional therapists specialized in couples and relaxation treatments</li>
+          <li>Exceptional spa services in a serene setting promoting relaxation and well-being</li>
+          <li>90-minute couples massage (~$310 total)</li>
+          <li>Book 1–2 weeks in advance for Thursday availability</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">4.3</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+              <span class="review-count">&nbsp;· Google, 22 reviews</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/Woodhouse+Spa+Boulder" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">Woodhouse Spa Boulder is highly praised for its welcoming staff, cozy and peaceful ambiance, and exceptional spa services. Clients consistently commend the professional therapists and relaxing environment with a focus on delivering rejuvenating treatments in a serene setting.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── THURSDAY DINNER ──────────────────────── -->
+    <div class="secondary-component">
+      <div class="secondary-component-label">Thursday Dinner</div>
+      <h4>Gemini</h4>
+      <a class="secondary-component-website" href="https://geminiboulder.com" target="_blank">geminiboulder.com · Pearl Street, Boulder</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>Full-service Spanish restaurant with contemporary Spanish cuisine</li>
+          <li>Mediterranean tapas inspired by Barcelona and San Sebastian</li>
+          <li>Standout dishes: bacon-wrapped dates and goat cheese dip</li>
+          <li>Excellent drink options and warm atmosphere with attentive service</li>
+          <li>Book 1–2 weeks in advance for weekend availability</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">4.6</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+              <span class="review-count">&nbsp;· OpenTable, 246 diners</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/Gemini+Boulder" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">Gemini is a full-service Spanish restaurant offering contemporary Spanish cuisine and international influences. Guests praise the tasty tapas menu, excellent drink options, and warm atmosphere with attentive service. The innovative dishes and careful attention to detail make it perfect for special occasions.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SATURDAY CASUAL DINING ──────────────── -->
+    <div class="secondary-component">
+      <div class="secondary-component-label">Saturday Casual Dining</div>
+      <h4>Postino WineCafé</h4>
+      <a class="secondary-component-website" href="https://postinowinecafe.com/boulder" target="_blank">postinowinecafe.com · Pearl Street, Boulder</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>Wine bar with exceptional wine selection from diverse varietals</li>
+          <li>Quality beer on tap and in bottles with an array of desserts</li>
+          <li>Non-alcoholic beverage options for diverse preferences</li>
+          <li>Perfect for post-adventure casual wine and nibbles</li>
+          <li>Located on Pearl Street with relaxed atmosphere</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">4.7</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+              <span class="review-count">&nbsp;· Google, 830 reviews</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/Postino+Boulder" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">Postino WineCafé offers an exceptional wine selection from diverse varietals, quality beer, and non-alcoholic beverages. Located on Pearl Street, it fills a unique niche for wine enthusiasts and casual diners looking for elevated beverages and food pairings in a relaxed, welcoming setting.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="secondary-component">
+      <h4>River and Woods</h4>
+      <a class="secondary-component-website" href="https://riverandwoodsboulder.com" target="_blank">riverandwoodsboulder.com · Boulder</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>Boulder's favorite comfort food restaurant in century-old miner's cabin</li>
+          <li>Uniquely inviting outdoor backyard seating perfect for relaxation</li>
+          <li>High-quality food with charming, intimate atmosphere</li>
+          <li>Perfect for special occasions and cozy celebrations</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">4.6</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+              <span class="review-count">&nbsp;· OpenTable, 1083 diners</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/River+and+Woods+Boulder" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">River and Woods is Boulder's favorite comfort food restaurant housed in a lovingly renovated century-old miner's cabin with uniquely inviting outdoor backyard seating. Guests praise the food quality and charming atmosphere, making it perfect for special occasions and intimate gatherings.</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <div class="budget-summary">
@@ -1331,6 +1512,33 @@
       <div class="price-bar">
         <span class="price-label">Estimated Rate</span>
         <span class="price-value">~$300–$450 / night · 3 nights = $900–$1,350 total</span>
+      </div>
+    </div>
+
+    <!-- ── COUPLES MASSAGE (THURSDAY) ───────────── -->
+    <div class="secondary-component">
+      <div class="secondary-component-label">Couples Massage</div>
+      <h4>Elements of Touch</h4>
+      <a class="secondary-component-website" href="https://www.elementsoftouchestespark.com" target="_blank">elementsoftouchestespark.com · Estes Park · (970) 586-6597</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>Award-winning spa celebrating 32 years of excellence</li>
+          <li>Voted best spa in Estes Park 2022–2025; recognized as one of Colorado's "MUST VISIT" spas</li>
+          <li>Hot Chocolate on the Rocks couples massage package available</li>
+          <li>Incredibly relaxing atmosphere with soothing music and calming scents</li>
+          <li>Book 1–2 weeks in advance for Thursday availability</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">4.8</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              <span class="review-count">&nbsp;· Highly positive reviews</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/Elements+of+Touch+Estes+Park" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">Award-winning spa celebrating 32 years of excellence. Reviewers consistently praise the friendly and welcoming therapists, incredibly relaxing atmosphere with soothing music and calming scents. One reviewer called it "the best 90 minutes I could have ever asked for."</div>
+        </div>
       </div>
     </div>
 
@@ -1413,6 +1621,56 @@
       </div>
     </div>
 
+    <!-- ── THURSDAY DINNER ──────────────────────── -->
+    <div class="secondary-component">
+      <div class="secondary-component-label">Thursday Dinner</div>
+      <h4>Cascades at The Stanley Hotel</h4>
+      <a class="secondary-component-website" href="https://stanley.hyatt.com" target="_blank">stanley.hyatt.com · Estes Park</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>New American cuisine in historic setting with mountain town ambiance</li>
+          <li>Unique menu featuring game meats and seasonal specials reflecting Colorado cuisine</li>
+          <li>Beautiful mountain views with top-notch service for special occasions</li>
+          <li>Book 1–2 weeks in advance for better seating availability</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">4.1</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+              <span class="review-count">&nbsp;· Yelp, 713 reviews</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/Cascades+at+The+Stanley+Hotel" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">New American cuisine in a historic setting. Reviewers praise "amazing food," "top-notch service," and the beautiful mountain town setting with unique menu featuring game meats. Some mixed reviews note staff can seem overwhelmed during peak times, but overall considered excellent for special occasions.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="secondary-component">
+      <h4>The Post Mountain House</h4>
+      <a class="secondary-component-website" href="https://www.thepostestespark.com" target="_blank">thepostestespark.com · Estes Park</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>Located in The Stanley Hotel's original Carriage House with welcoming atmosphere</li>
+          <li>Amazing gluten-free options and fantastic fried chicken with creative cocktails</li>
+          <li>Standout dishes: fried chicken, buffalo chicken sandwiches, green chili mac n cheese</li>
+          <li>Excellent service; worth the occasional wait times for exceptional food</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">4.3</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+              <span class="review-count">&nbsp;· Google</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/The+Post+Mountain+House" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">Highly rated for amazing gluten-free options and fantastic fried chicken with creative cocktails. Located in The Stanley Hotel's original Carriage House. Reviewers consistently praise the welcoming atmosphere, attentive staff, standout fried chicken, and unique menu items.</div>
+        </div>
+      </div>
+    </div>
+
     <!-- ── CEREMONY ────────────────────────────── -->
     <div class="component">
       <div class="component-label">Ceremony</div>
@@ -1488,6 +1746,56 @@
       <div class="price-bar">
         <span class="price-label">Estimated Cost</span>
         <span class="price-value">~$600–$800 for two · sunrise flight with champagne</span>
+      </div>
+    </div>
+
+    <!-- ── SATURDAY CASUAL DINING ──────────────── -->
+    <div class="secondary-component">
+      <div class="secondary-component-label">Saturday Casual Dining</div>
+      <h4>Ed's Cantina & Grill</h4>
+      <a class="secondary-component-website" href="https://www.edscantina.com" target="_blank">edscantina.com · Dinner on the riverwalk, Estes Park</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>Locally owned and operated since 1989 with fresh, homemade central Mexican cuisine</li>
+          <li>Amazing margaritas and flavorful fajitas with huge portions</li>
+          <li>Patio overlooks the creek with beautiful riverside ambiance</li>
+          <li>Veggie enchiladas and authentic Colorado twist on traditional dishes</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">4.3</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+              <span class="review-count">&nbsp;· Google</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/Ed's+Cantina+and+Grill" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">Locally owned and operated since 1989, serving fresh, homemade food inspired by central Mexican cuisine with a Colorado twist. Reviewers rave about the amazing margaritas, flavorful fajitas with huge portions, and veggie enchiladas. The patio overlooks the creek with consistently praised service.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="secondary-component">
+      <h4>Scratch Deli & Bakery</h4>
+      <a class="secondary-component-website" href="https://www.scratchdeliandbakery.com" target="_blank">scratchdeliandbakery.com · Post-balloon brunch, Estes Park</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>Ranked #6 of 109 restaurants in Estes Park; all meats, breads, and desserts made daily</li>
+          <li>Enormous fresh sandwiches on focaccia bread with quality ingredients</li>
+          <li>Generous breakfast sandwiches and excellent service from open at 7 AM</li>
+          <li>Popular for vegetarian and vegan options; perfect for post-adventure brunch</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">4.6</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+              <span class="review-count">&nbsp;· Yelp, 461 reviews</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/Scratch+Deli+and+Bakery" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">Ranked #6 of 109 restaurants in Estes Park. All meats, breads, and desserts made from scratch daily. Reviewers rave about enormous fresh sandwiches on focaccia bread with quality ingredients, generous breakfast sandwiches, and excellent service. Popular for vegetarian and vegan options.</div>
+        </div>
       </div>
     </div>
 
@@ -1728,6 +2036,161 @@
       </div>
     </div>
 
+    <!-- ── COUPLES MASSAGE ──────────────────────── -->
+    <div class="secondary-component">
+      <div class="secondary-component-label">Couples Massage</div>
+      <h4>Sage Massage & Acupuncture</h4>
+      <a class="secondary-component-website" href="https://sagemassageacupuncture.com/" target="_blank">sagemassageacupuncture.com · Grand County</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>Voted #1 Massage in Grand County for 6+ consecutive years</li>
+          <li>Specialized massage, acupuncture, cupping, and dry needling</li>
+          <li>Himalayan salt stone and CBD treatments available</li>
+          <li>Couples/tandem sessions welcome for relaxation and healing</li>
+          <li>20+ years of experience with certified practitioners</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">★★★★★</span>
+              <span class="review-count">&nbsp;· Grand County Best Massage Award</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/Sage+Massage+%26+Acupuncture" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">Sage's certified acupuncturists and massage therapists specialize in deep tissue, prenatal massage, cupping, and dry needling. With 20+ years of experience and Masters certification in Traditional Chinese Medicine, Sage is highly intuitive in reading body tension and effectively releases trigger points for pain relief and migraine prevention.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="secondary-component">
+      <h4>Mountain Soul Wellness</h4>
+      <a class="secondary-component-website" href="https://www.mountainsoulwellness.com/" target="_blank">mountainsoulwellness.com · Grand Lake</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>Award-winning wellness center with 22+ years experience</li>
+          <li>Advanced therapeutic massage and myofascial release</li>
+          <li>Vibroacoustic sound therapy room for enhanced relaxation</li>
+          <li>Medicupping and specialized tension relief techniques</li>
+          <li>Ranked #2 spa in Grand Lake with 198 TripAdvisor reviews</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">5.0</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              <span class="review-count">&nbsp;· TripAdvisor</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/Mountain+Soul+Wellness" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">Sarah Chabot's award-winning wellness center offers advanced therapeutic massage, myofascial release, medicupping, and vibroacoustic sound therapy. Clients describe sessions as "probably the best massage I've ever had," praising her intuitive approach and remarkable ability to resolve chronic tension and provide lasting relief.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── THURSDAY DINNER ──────────────────────── -->
+    <div class="secondary-component">
+      <div class="secondary-component-label">Thursday Dinner</div>
+      <h4>Brickhouse 40</h4>
+      <a class="secondary-component-website" href="https://www.yelp.com/biz/brickhouse-40-granby" target="_blank">yelp.com · Downtown Granby</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>Modern American restaurant in historic 1927 brick building</li>
+          <li>Creative menu items like firecracker shrimp and Brickhouse Bowl</li>
+          <li>Friendly service and cozy atmosphere with mountain vibe</li>
+          <li>Dog-friendly patio perfect for relaxation</li>
+          <li>Part saloon/part restaurant with unique ambiance</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">4.2</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+              <span class="review-count">&nbsp;· Google</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/Brickhouse+40+Granby" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">Located in a historic 1927 brick building reopened in 2018, this modern American restaurant features friendly service and creative menu items. The cozy atmosphere with mountain vibe and dog-friendly patio are assets, while the food is consistently praised for quality and creativity.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="secondary-component">
+      <h4>Maverick's Grille</h4>
+      <a class="secondary-component-website" href="https://www.destinationgranby.com/restaurants/" target="_blank">destinationgranby.com · Granby</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>Western-themed restaurant with locally sourced ingredients</li>
+          <li>Famous for gourmet burgers and excellent green chili</li>
+          <li>Wild game meatloaf and Colorado craft beer selection</li>
+          <li>Warm ambiance and attentive service</li>
+          <li>Local favorite for flavorful, well-prepared dishes</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">4.2</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+              <span class="review-count">&nbsp;· Google</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/Maverick's+Grille" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">Known for gourmet burgers and excellent green chili, Maverick's consistently receives praise for flavorful, well-prepared dishes and craft Colorado beers. Reviewers commend the warm ambiance and attentive service, making it a reliable choice for a special dinner in Granby.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SATURDAY CASUAL DINING ──────────────── -->
+    <div class="secondary-component">
+      <div class="secondary-component-label">Saturday Casual Dining</div>
+      <h4>One Love Rum Kitchen</h4>
+      <a class="secondary-component-website" href="https://gograndlake.com/restaurants-dining/" target="_blank">gograndlake.com · Grand Lake</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>Caribbean-inspired "beach bar in the mountains" atmosphere</li>
+          <li>Creative dishes: pork belly tacos, Mahi Mahi tacos, fresh seafood</li>
+          <li>Unique cocktails and exceptional bartender service</li>
+          <li>Happy hour 3–5 pm with 50% off many items</li>
+          <li>Relaxed vibe perfect for post-adventure celebrations</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">4.5</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+              <span class="review-count">&nbsp;· Multiple platforms</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/One+Love+Rum+Kitchen" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">This Caribbean-inspired "beach bar in the mountains" is highly rated for creative dishes like pork belly tacos and Mahi Mahi tacos, unique cocktails, and exceptional bartender service. The relaxed, festive atmosphere makes it perfect for casual dining and celebrations.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="secondary-component">
+      <h4>Sagebrush BBQ & Grill</h4>
+      <a class="secondary-component-website" href="https://gograndlake.com/restaurants-dining/" target="_blank">gograndlake.com · Grand Lake</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>Voted "Grand Lake's #1 Restaurant" with log cabin Old West decor</li>
+          <li>Slow-smoked meats and house-made sides with generous portions</li>
+          <li>Pulled pork sandwiches and Ridge Trail Sampler as standouts</li>
+          <li>Excellent breakfast; dog-friendly outdoor seating</li>
+          <li>Consistently warm and attentive service</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">4.2</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+              <span class="review-count">&nbsp;· TripAdvisor, #3 of 22 restaurants</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/Sagebrush+BBQ+Grill" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">Voted "Grand Lake's #1 Restaurant," this BBQ spot is praised for generous portions, locally-sourced ingredients, and reasonable pricing. Pulled pork sandwiches and the Ridge Trail Sampler are standouts. Breakfast is particularly excellent, the dog-friendly outdoor seating is spacious, and service is consistently warm and attentive.</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <div class="budget-summary">
@@ -1962,6 +2425,59 @@
       <div class="price-bar">
         <span class="price-label">Estimated Cost</span>
         <span class="price-value">~$200–$400 · private carriage wine tour</span>
+      </div>
+    </div>
+
+    <!-- ── COUPLES MASSAGE ──────────────────────── -->
+    <div class="secondary-component">
+      <div class="secondary-component-label">Couples Massage</div>
+      <h4>Body Therapeutics</h4>
+      <a class="secondary-component-website" href="https://www.bodytmm.com/packages-and-memberships" target="_blank">bodytmm.com · Grand Junction</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>Ranked #1 for Day Spas, Massage Therapy & Reflexology in Grand Junction</li>
+          <li>"Lovers Retreat" package with couples salt stone massage and paraffin treatment</li>
+          <li>Infrared sauna and comprehensive therapeutic services</li>
+          <li>Therapists praised as "extremely qualified" and skilled at addressing tension</li>
+          <li>Clients report "one of the best massages I've ever had" experiences</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">★★★★★</span>
+              <span class="review-count">&nbsp;· #1 Day Spa in Grand Junction</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/Body+Therapeutics" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">Highly acclaimed spa with overwhelmingly positive reviews. Therapists are praised as "extremely skilled" at addressing tension and providing therapeutic relief. Customers report exceptional experiences with professional staff, attentive service, and reasonable pricing for high-quality services. Specializes in therapeutic massage, Himalayan salt stone, cupping, lymphatic work, and Ashiatsu massage.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── THURSDAY DINNER ──────────────────────── -->
+    <div class="secondary-component">
+      <div class="secondary-component-label">Thursday Dinner</div>
+      <h4>626 on Rood</h4>
+      <a class="secondary-component-website" href="https://www.626onrood.com/" target="_blank">626onrood.com · Grand Junction</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>Fine dining institution (20+ years) specializing in Modern American cuisine</li>
+          <li>Locally sourced, seasonally driven ingredients with innovative preparations</li>
+          <li>30 wines by glass and creative craft cocktails</li>
+          <li>Superbly trained, professional staff with attentive service</li>
+          <li>Ranked #7 of 216 restaurants in Grand Junction</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">4.5</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+              <span class="review-count">&nbsp;· TripAdvisor, 462 reviews</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/626+on+Rood" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">20+ year established fine dining institution with exceptional reputation. Specializes in Modern American cuisine with locally sourced, seasonally driven ingredients. Praised for "great-tasting, innovative food," "superbly trained, professional staff," and "most extensive wine list in the Grand Valley." Frequently recommended for special occasions.</div>
+        </div>
       </div>
     </div>
 
@@ -2242,6 +2758,136 @@
             <span class="price-label">Estimated Cost</span>
             <span class="price-value">~$200–$300 for two · 2-hour guided ride</span>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── COUPLES MASSAGE ──────────────────────── -->
+    <div class="secondary-component">
+      <div class="secondary-component-label">Couples Massage</div>
+      <h4>Waterside Day Spa</h4>
+      <a class="secondary-component-website" href="https://www.watersidedayspa.com" target="_blank">watersidedayspa.com · Steamboat Springs</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>Family-owned spa located on the Yampa River in downtown Steamboat Springs</li>
+          <li>3-hour riverside couples massage package plus access to salt room</li>
+          <li>Professional therapists in tranquil riverside setting</li>
+          <li>Awarded Best Day Spa in Steamboat 2023 & 2024</li>
+          <li>Comprehensive spa services: massages, skincare, hair styling</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">4.6</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+              <span class="review-count">&nbsp;· Google, 64 reviews</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/Waterside+Day+Spa" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">Waterside Day Spa & Salon is highly praised for its tranquil riverside setting, professional therapists, and comprehensive services. Guests consistently mention feeling pampered and relaxed. The spa was awarded Best Day Spa in Steamboat in 2023 and 2024, reflecting their commitment to exceptional wellness experiences.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="secondary-component">
+      <h4>Rocky Mountain Day Spa</h4>
+      <a class="secondary-component-website" href="https://www.steamboatmassage.com" target="_blank">steamboatmassage.com · Steamboat Springs</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>Award-winning spa offering luxurious couples treatments</li>
+          <li>Couples package with mountain views and complimentary champagne</li>
+          <li>Voted "Best Day Spa" from 2013–2022 with unwavering excellence</li>
+          <li>Warm, tranquil atmosphere with top-notch professionalism</li>
+          <li>Expert massage and pampering care for complete relaxation</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">★★★★★</span>
+              <span class="review-count">&nbsp;· "Best Day Spa" 2013–2022</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/Rocky+Mountain+Day+Spa" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">Rocky Mountain Day Spa & Luxe Boutique is an award-winning spa offering luxurious treatments. Reviewers describe the experience as "absolutely lavish" with a warm, tranquil atmosphere where staff demonstrate top-notch professionalism. Guests particularly praise the pedicure and massage services, noting the expertise and pampering care.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── THURSDAY DINNER ──────────────────────── -->
+    <div class="secondary-component">
+      <div class="secondary-component-label">Thursday Dinner</div>
+      <h4>Aurum Food & Wine</h4>
+      <a class="secondary-component-website" href="https://aurumsteamboat.com" target="_blank">aurumsteamboat.com · Steamboat Springs</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>Yampa River views with farm-to-table approach to dining</li>
+          <li>Complimentary champagne for celebrations and special occasions</li>
+          <li>Attentive service and excellent wine program</li>
+          <li>Creative menu with romantic ambiance and riverside location</li>
+          <li>Perfect for intimate Thursday celebrations</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">4.7</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+              <span class="review-count">&nbsp;· OpenTable</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/Aurum+Food+%26+Wine" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">Aurum Food & Wine is praised for its stunning Yampa River views and farm-to-table approach. Guests consistently mention attentive service, excellent wine program, and complimentary champagne for special occasions. The unique riverfront location and thoughtful preparations make it popular for celebrations with creative menu items.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SATURDAY CASUAL DINING ──────────────── -->
+    <div class="secondary-component">
+      <div class="secondary-component-label">Saturday Casual Dining</div>
+      <h4>Creekside Café & Grill</h4>
+      <a class="secondary-component-website" href="https://www.creeksidecafeandgrill.com" target="_blank">creeksidecafeandgrill.com · Steamboat Springs</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>Beloved post-balloon brunch spot with creek-side patio seating</li>
+          <li>Breakfast and lunch favorite with creative, locally-inspired menu</li>
+          <li>"Incredible pancakes" and amazing breakfast options</li>
+          <li>Selection of adult drinks and great beverage options</li>
+          <li>Casual, welcoming atmosphere perfect for post-adventure celebrations</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">4.7</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+              <span class="review-count">&nbsp;· Google</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/Creekside+Cafe+%26+Grill" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">Creekside Café & Grill is a breakfast and lunch favorite known for creative, locally-inspired menu items. Reviewers consistently praise the "incredible pancakes," amazing breakfast options, and selection of adult drinks. The creek-side patio setting is highlighted as a major attraction with a casual, welcoming atmosphere.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="secondary-component">
+      <h4>Yampa Valley Kitchen</h4>
+      <a class="secondary-component-website" href="https://www.yampavalleykitchen.com" target="_blank">yampavalleykitchen.com · Steamboat Springs</a>
+      <div class="secondary-component-body">
+        <ul class="secondary-details-list">
+          <li>Farm-to-table restaurant with garden patio seating</li>
+          <li>"Amazing food" with standout dishes: short ribs and ricotta pancakes</li>
+          <li>Pet-friendly environment with relaxed atmosphere</li>
+          <li>Fantastic service and high-quality, creative cuisine</li>
+          <li>Perfect for relaxed Saturday wind-down and celebration</li>
+        </ul>
+        <div class="review-panel">
+          <div class="review-header">
+            <div class="review-stars">
+              <span class="review-score">4.5</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star-empty">★</span>
+              <span class="review-count">&nbsp;· Google</span>
+            </div>
+            <a class="google-link" href="https://www.google.com/maps/place/Yampa+Valley+Kitchen" target="_blank">Google Reviews ↗</a>
+          </div>
+          <div class="review-summary">Yampa Valley Kitchen receives high praise for its farm-to-table approach and excellent service. Diners consistently mention the "amazing food," with standout dishes like short ribs and ricotta pancakes. The restaurant is pet-friendly with a relaxed atmosphere and garden patio seating, creating an ideal setting for intimate celebrations.</div>
         </div>
       </div>
     </div>
