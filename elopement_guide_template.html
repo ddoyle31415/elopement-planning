@@ -231,23 +231,29 @@
   }
   .component-website:hover { color: var(--gold-light); }
 
-  /* PHOTO: full-width for each component */
-  .component-photo {
-    width: 100%;
-    height: 420px;
+  /* PHOTO GALLERY: multiple photos for each component */
+  .component-photo-gallery {
+    margin-bottom: 1.8rem;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.8rem;
+  }
+  .gallery-item {
+    height: 200px;
     overflow: hidden;
     position: relative;
-    margin-bottom: 1.8rem;
     border-radius: 1px;
   }
-  .component-photo img {
-    width: 100%; height: 100%;
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     display: block;
     transition: transform 0.7s ease;
-    position: absolute;
   }
-  .component:hover .component-photo img { transform: scale(1.03); }
+  .gallery-item:hover img { transform: scale(1.03); }
 
   .photo-credit {
     position: absolute; bottom: 0.75rem; right: 0.75rem;
@@ -500,9 +506,12 @@
       <div class="component-label">Lodging</div>
       <h3 class="component-name">The Little Nell</h3>
       <a class="component-website" href="https://www.thelittlenell.com/" target="_blank">thelittlenell.com · Aspen, Colorado</a>
-      <div class="component-photo">
-        <img src="https://images.trvl-media.com/lodging/1000000/20000/15900/15810/78ee2181.jpg?impolicy=resizecrop&rw=1200&ra=fit" alt="The Little Nell hotel exterior">
-        <span class="photo-credit">The Little Nell</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://images.trvl-media.com/lodging/1000000/20000/15900/15810/78ee2181.jpg?impolicy=resizecrop&rw=1200&ra=fit" alt="The Little Nell hotel exterior"></div>
+          <div class="gallery-item"><img src="https://images.trvl-media.com/lodging/1000000/20000/15900/15810/0d98eeca.jpg?impolicy=resizecrop&rw=1200&ra=fit" alt="The Little Nell hotel interior"></div>
+          <div class="gallery-item"><img src="https://images.trvl-media.com/lodging/1000000/20000/15900/15810/fb52b13d.jpg?impolicy=resizecrop&rw=1200&ra=fit" alt="The Little Nell fireplace room"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -536,9 +545,11 @@
       <div class="component-label">Friday Dinner</div>
       <h3 class="component-name">Bosq</h3>
       <a class="component-website" href="https://www.bosqaspen.com/" target="_blank">bosqaspen.com · Aspen</a>
-      <div class="component-photo">
-        <img src="https://resizer.otstatic.com/v2/photos/large/1/80757495.jpg" alt="Bosq restaurant interior">
-        <span class="photo-credit">Bosq</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://resizer.otstatic.com/v2/photos/large/1/80757495.jpg" alt="Bosq restaurant interior"></div>
+          <div class="gallery-item"><img src="https://cdn.prod.website-files.com/686d5c2db2996432b43dfa72/6872013651e99e1783aae693_interiorDoorHL%201.jpg" alt="Bosq dining room entrance"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -571,9 +582,11 @@
       <div class="component-label">Ceremony</div>
       <h3 class="component-name">Maroon Bells Amphitheatre</h3>
       <a class="component-website" href="https://www.recreation.gov/camping/maroon-bells-amphitheatre/r/campgroundDetails.do?contractCode=NRSO&parkId=72006" target="_blank">recreation.gov · Maroon Bells, Colorado</a>
-      <div class="component-photo">
-        <img src="https://images.squarespace-cdn.com/content/v1/601ed524dacf4b64ff2b7ba8/1614657961300-0UTUNDCVGKPF709AIGE3/Aspen-Mountain-Elopement_0008.jpg" alt="Maroon Bells ceremony setting">
-        <span class="photo-credit">Maroon Bells</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Dz3_SyfQJGLmtpmGy2P1tsOvwCxcJs6Efg&s" alt="Maroon Bells mountain backdrop"></div>
+          <div class="gallery-item"><img src="https://images.squarespace-cdn.com/content/v1/601ed524dacf4b64ff2b7ba8/1614657961300-0UTUNDCVGKPF709AIGE3/Aspen-Mountain-Elopement_0008.jpg" alt="Maroon Bells ceremony setting"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -610,9 +623,10 @@
       <div class="component-label">Saturday Adventure</div>
       <h3 class="component-name">Above It All Balloon Company</h3>
       <a class="component-website" href="http://www.aspenballoonrides.com/" target="_blank">aspenballoonrides.com · Aspen Valley</a>
-      <div class="component-photo">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdnTP9rC82lmH4mnRV10cpPwAZpPe24k0gKw&s" alt="Hot air balloon over Snowmass Valley">
-        <span class="photo-credit">Above It All Balloon Company</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdnTP9rC82lmH4mnRV10cpPwAZpPe24k0gKw&s" alt="Hot air balloon over Snowmass Valley"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -685,9 +699,12 @@
       <div class="component-label">Lodging</div>
       <h3 class="component-name">The Bradley Boulder Inn</h3>
       <a class="component-website" href="https://www.bradleyboulderinn.com" target="_blank">bradleyboulderinn.com · Boulder</a>
-      <div class="component-photo">
-        <img src="https://lh3.googleusercontent.com/p/AF1QipNke3Xa057eSkpUCEhr8CTOGgiNJPfO8C95ni9F=s1360-w1360-h1020-rw" alt="The Bradley Boulder Inn exterior">
-        <span class="photo-credit">The Bradley Boulder Inn</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://lh3.googleusercontent.com/p/AF1QipNke3Xa057eSkpUCEhr8CTOGgiNJPfO8C95ni9F=s1360-w1360-h1020-rw" alt="The Bradley Boulder Inn exterior"></div>
+          <div class="gallery-item"><img src="https://lh3.googleusercontent.com/p/AF1QipPHvitpp3Ij_FKLZNeZb05EdzUrJtTYoFTSlHNR=s1360-w1360-h1020-rw" alt="The Bradley Boulder Inn interior"></div>
+          <div class="gallery-item"><img src="https://lh3.googleusercontent.com/p/AF1QipPHjuspJAivnqXlUsyDS3farjWJeqzvQg7IR7nv=s1360-w1360-h1020-rw" alt="The Bradley Boulder Inn room"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -720,9 +737,12 @@
       <div class="component-label">Friday Dinner</div>
       <h3 class="component-name">Black Cat Farmstead</h3>
       <a class="component-website" href="https://blackcatboulder.com" target="_blank">blackcatboulder.com · Boulder</a>
-      <div class="component-photo">
-        <img src="https://blackcatboulder.com/wp-content/uploads/2022/10/14_Day01Farm_284.jpg" alt="Black Cat Farmstead farm setting">
-        <span class="photo-credit">Black Cat Farmstead</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://blackcatboulder.com/wp-content/uploads/2022/10/14_Day01Farm_284.jpg" alt="Black Cat Farmstead farm setting"></div>
+          <div class="gallery-item"><img src="https://blackcatboulder.com/wp-content/uploads/2022/10/29_PoachedHamTerrine_016.jpg" alt="Black Cat Farmstead cuisine"></div>
+          <div class="gallery-item"><img src="https://blackcatboulder.com/wp-content/uploads/2022/10/14_Day01Farm_217.jpg" alt="Black Cat Farmstead farm details"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -755,9 +775,11 @@
       <div class="component-label">Ceremony</div>
       <h3 class="component-name">Lost Gulch Overlook</h3>
       <a class="component-website" href="https://boco.colorado.gov/parks-open-space" target="_blank">boco.colorado.gov/parks-open-space · Flagstaff Mountain, Boulder</a>
-      <div class="component-photo">
-        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwereN6ZoR1DbB9I5it0pSOhb90z7szGQOlkoJrMOeaJAyFIQ3LFgTPt__P907pCSaCmdmxNmKUP5ThzcUy2e0cqOn-eV-JDOi0qI6Uo_5C10ij9ai11L7E-V-8RD7hAF6Qy6fp8mSeNczDE=s1360-w1360-h1020-rw" alt="Lost Gulch Overlook ceremony site">
-        <span class="photo-credit">Lost Gulch Overlook</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwereN6ZoR1DbB9I5it0pSOhb90z7szGQOlkoJrMOeaJAyFIQ3LFgTPt__P907pCSaCmdmxNmKUP5ThzcUy2e0cqOn-eV-JDOi0qI6Uo_5C10ij9ai11L7E-V-8RD7hAF6Qy6fp8mSeNczDE=s1360-w1360-h1020-rw" alt="Lost Gulch Overlook view"></div>
+          <div class="gallery-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwer4alH99OmMbX8AW7LHpQ26OoFnPAZgjo-jfzswKsZ0ICAhi0tc3DtNwGJG9H6O_Xyz4w32gHrklAmRlrthVS0sG5GvOxKpQtH4bgQraRxOuSyOVAFAnSWDTnYjhYl2y6DCpA=s1360-w1360-h1020-rw" alt="Lost Gulch Overlook ceremony site"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -794,9 +816,10 @@
       <div class="component-label">Saturday Adventure</div>
       <h3 class="component-name">Fair Winds Hot Air Balloon</h3>
       <a class="component-website" href="https://www.fairwindsballoon.com" target="_blank">fairwindsballoon.com · Boulder Valley</a>
-      <div class="component-photo">
-        <img src="https://wethelightphotography.com/wp-content/uploads/Artists_Point_Elopement_0278-1024x683.jpg" alt="Hot air balloon over Boulder Valley">
-        <span class="photo-credit">Fair Winds Hot Air Balloon</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://wethelightphotography.com/wp-content/uploads/Artists_Point_Elopement_0278-1024x683.jpg" alt="Hot air balloon over Boulder Valley"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -869,9 +892,13 @@
       <div class="component-label">Lodging</div>
       <h3 class="component-name">Riversong Inn Retreat</h3>
       <a class="component-website" href="https://www.romanticriversong.com" target="_blank">romanticriversong.com · Estes Park · (970) 586-4666</a>
-      <div class="component-photo">
-        <img src="https://romanticriversong.com/wp-content/uploads/2025/06/Morning-Glory-28.png" alt="Riversong Inn Retreat exterior">
-        <span class="photo-credit">Riversong Inn Retreat</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://romanticriversong.com/wp-content/uploads/2025/06/Morning-Glory-28.png" alt="Riversong Inn Retreat exterior"></div>
+          <div class="gallery-item"><img src="https://romanticriversong.com/wp-content/uploads/2025/06/Morning-Glory-23.png" alt="Riversong Inn Retreat cabin"></div>
+          <div class="gallery-item"><img src="https://romanticriversong.com/wp-content/uploads/2022/11/welcome1-scaled.jpg" alt="Riversong Inn Retreat entrance"></div>
+          <div class="gallery-item"><img src="https://romanticriversong.com/wp-content/uploads/2025/07/RRS-75-scaled.jpg" alt="Riversong Inn Retreat grounds"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -904,9 +931,11 @@
       <div class="component-label">Friday Dinner</div>
       <h3 class="component-name">Twin Owls Steakhouse</h3>
       <a class="component-website" href="https://www.taharaa.com" target="_blank">taharaa.com · Taharaa Mountain Lodge, Estes Park</a>
-      <div class="component-photo">
-        <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,q_75,w_1200/v1/crm/estespark/twin-owl-2_E673AA1D-0A83-4635-6A0EEC55B72A6012-e6735e7ca033efb_e674687a-f430-bff8-050624fbb03a0cd5.jpg" alt="Twin Owls Steakhouse dining room">
-        <span class="photo-credit">Twin Owls Steakhouse</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://taharaa.com/wp-content/uploads/2024/10/Screenshot-2024-10-04-at-10.02.23%E2%80%AFPM.png" alt="Twin Owls Steakhouse interior"></div>
+          <div class="gallery-item"><img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,q_75,w_1200/v1/crm/estespark/twin-owl-2_E673AA1D-0A83-4635-6A0EEC55B72A6012-e6735e7ca033efb_e674687a-f430-bff8-050624fbb03a0cd5.jpg" alt="Twin Owls Steakhouse dining room"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -939,9 +968,11 @@
       <div class="component-label">Ceremony</div>
       <h3 class="component-name">Rocky Mountain National Park</h3>
       <a class="component-website" href="https://www.nps.gov/romo/planyourvisit/special-use-permits.htm" target="_blank">nps.gov/romo · romo_permits@nps.gov · (970) 586-1206</a>
-      <div class="component-photo">
-        <img src="https://leahgoetzel.com/wp-content/uploads/sites/13453/2021/08/3M-Curve-Wedding-Rocky-Mountai-1-8.jpg" alt="3M Curve Rocky Mountain National Park ceremony site">
-        <span class="photo-credit">Rocky Mountain National Park</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://larsenphoto.co/wp-content/uploads/2019/10/windy-rmnp-elopement-24.jpg" alt="Rocky Mountain National Park elopement ceremony"></div>
+          <div class="gallery-item"><img src="https://leahgoetzel.com/wp-content/uploads/sites/13453/2021/08/3M-Curve-Wedding-Rocky-Mountai-1-8.jpg" alt="3M Curve Rocky Mountain National Park ceremony site"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -978,9 +1009,10 @@
       <div class="component-label">Saturday Adventure</div>
       <h3 class="component-name">Grand Adventure Balloon Tours</h3>
       <a class="component-website" href="https://grandadventureballoon.com" target="_blank">grandadventureballoon.com · Fraser Valley</a>
-      <div class="component-photo">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5v5DyNYxWJH5o6VvBqPHJyRSZEWn_HrAJr_M&s" alt="Hot air balloon over Fraser Valley">
-        <span class="photo-credit">Grand Adventure Balloon Tours</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5v5DyNYxWJH5o6VvBqPHJyRSZEWn_HrAJr_M&s" alt="Hot air balloon over Fraser Valley"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -1053,9 +1085,13 @@
       <div class="component-label">Lodging</div>
       <h3 class="component-name">Arapaho Valley Ranch</h3>
       <a class="component-website" href="https://www.arapahovalleyranch.com/" target="_blank">arapahovalleyranch.com · Granby, Colorado</a>
-      <div class="component-photo">
-        <img src="https://images.trvl-media.com/lodging/90000000/89540000/89538100/89538028/991560a3.jpg?impolicy=resizecrop&rw=1200&ra=fit" alt="Arapaho Valley Ranch cabin exterior">
-        <span class="photo-credit">Arapaho Valley Ranch</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://images.trvl-media.com/lodging/90000000/89540000/89538100/89538028/991560a3.jpg?impolicy=resizecrop&rw=1200&ra=fit" alt="Arapaho Valley Ranch cabin exterior"></div>
+          <div class="gallery-item"><img src="https://images.trvl-media.com/lodging/90000000/89540000/89538100/89538028/c001cca6.jpg?impolicy=resizecrop&rw=1200&ra=fit" alt="Arapaho Valley Ranch cabin interior"></div>
+          <div class="gallery-item"><img src="https://images.trvl-media.com/lodging/90000000/89540000/89538100/89538028/fe687ce6.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" alt="Arapaho Valley Ranch amenities"></div>
+          <div class="gallery-item"><img src="https://www.goworldtravel.com/wp-content/uploads/2025/07/Arapaho-Valley-Ranch-2.jpg" alt="Arapaho Valley Ranch grounds"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -1088,9 +1124,12 @@
       <div class="component-label">Friday Dinner</div>
       <h3 class="component-name">Rapids Lodge & Restaurant</h3>
       <a class="component-website" href="https://www.rapidslodge.com/" target="_blank">rapidslodge.com · Grand Lake, Colorado</a>
-      <div class="component-photo">
-        <img src="https://lirp.cdn-website.com/60053c79/dms3rep/multi/opt/Lodges-Rapids-Grand-027-640w.jpg" alt="Rapids Lodge riverside dining">
-        <span class="photo-credit">Rapids Lodge & Restaurant</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://lirp.cdn-website.com/60053c79/dms3rep/multi/opt/Lodges-Rapids-Grand-027-640w.jpg" alt="Rapids Lodge riverside dining"></div>
+          <div class="gallery-item"><img src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/GrandLakeCO/IMG_1906_8c346760-fbe4-4ad3-a3cb-3106fb6bc7c1.jpg" alt="Rapids Lodge interior"></div>
+          <div class="gallery-item"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/19/cf/1f/the-rapids-restaurant.jpg?w=900&h=500&s=1" alt="Rapids Lodge restaurant view"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -1123,9 +1162,11 @@
       <div class="component-label">Ceremony</div>
       <h3 class="component-name">Point Park, Grand Lake</h3>
       <a class="component-website" href="https://boco.colorado.gov/parks-open-space" target="_blank">boco.colorado.gov/parks-open-space · Grand Lake, Colorado</a>
-      <div class="component-photo">
-        <img src="https://www.plumprettyphotography.com/wp-content/uploads/sites/7019/2022/01/grand-lake-wedding-photos-Point-Park-Colorado_0005.jpg" alt="Point Park lakeside ceremony setting">
-        <span class="photo-credit">Point Park, Grand Lake</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://leahgoetzel.com/wp-content/uploads/sites/13453/2021/12/Grand-Lake-Wedding-82-1024x683.jpg" alt="Point Park Grand Lake views"></div>
+          <div class="gallery-item"><img src="https://www.plumprettyphotography.com/wp-content/uploads/sites/7019/2022/01/grand-lake-wedding-photos-Point-Park-Colorado_0005.jpg" alt="Point Park lakeside ceremony setting"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -1162,9 +1203,10 @@
       <div class="component-label">Saturday Adventure</div>
       <h3 class="component-name">Grand Adventure Balloon Tours</h3>
       <a class="component-website" href="https://grandadventureballoon.com/" target="_blank">grandadventureballoon.com · Fraser Valley</a>
-      <div class="component-photo">
-        <img src="https://grandadventureballoon.com/wp-content/uploads/2018/04/no-watermark-3web.jpg" alt="Hot air balloon over Fraser Valley and Continental Divide">
-        <span class="photo-credit">Grand Adventure Balloon Tours</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://grandadventureballoon.com/wp-content/uploads/2018/04/no-watermark-3web.jpg" alt="Hot air balloon over Fraser Valley and Continental Divide"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -1237,9 +1279,13 @@
       <div class="component-label">Lodging</div>
       <h3 class="component-name">The Hotel Melrose</h3>
       <a class="component-website" href="https://www.thehotelmelrose.com/" target="_blank">thehotelmelrose.com · Grand Junction, Colorado</a>
-      <div class="component-photo">
-        <img src="https://www.thehotelmelrose.com/hubfs/Thehotelmelrose_January2025/images/65d6a0978eaef9775ac6b0c7_The_Hotel_Melrose_Dlx_King-4.webp" alt="The Hotel Melrose luxury suite">
-        <span class="photo-credit">The Hotel Melrose</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://www.thehotelmelrose.com/hubfs/Thehotelmelrose_January2025/images/65d6a0978eaef9775ac6b0c7_The_Hotel_Melrose_Dlx_King-4.webp" alt="The Hotel Melrose luxury suite"></div>
+          <div class="gallery-item"><img src="https://www.thehotelmelrose.com/hubfs/Thehotelmelrose_January2025/images/65d65e6415b3ef777024c245_The_Hotel_Melrose_Dbl_Queen-9.webp" alt="The Hotel Melrose double queen room"></div>
+          <div class="gallery-item"><img src="https://www.thehotelmelrose.com/hubfs/Thehotelmelrose_January2025/images/65d6a09bb8a6005e5cef27f8_The_Hotel_Melrose_Dlx_King-1.webp" alt="The Hotel Melrose king room"></div>
+          <div class="gallery-item"><img src="https://www.thehotelmelrose.com/hubfs/DSC09724.jpg" alt="The Hotel Melrose lobby"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -1272,9 +1318,11 @@
       <div class="component-label">Friday Dinner</div>
       <h3 class="component-name">The Winery Restaurant</h3>
       <a class="component-website" href="https://winery-restaurant.com/" target="_blank">winery-restaurant.com · Grand Junction</a>
-      <div class="component-photo">
-        <img src="https://winery-restaurant.com/wp-content/uploads/2014/12/Violin-Room-1-For-Web.jpg" alt="The Winery Restaurant dining room">
-        <span class="photo-credit">The Winery Restaurant</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://winery-restaurant.com/wp-content/uploads/2014/09/point-welcoming-358x274.jpg" alt="The Winery Restaurant entrance"></div>
+          <div class="gallery-item"><img src="https://winery-restaurant.com/wp-content/uploads/2014/12/Violin-Room-1-For-Web.jpg" alt="The Winery Restaurant dining room"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -1307,9 +1355,11 @@
       <div class="component-label">Ceremony</div>
       <h3 class="component-name">Colorado National Monument</h3>
       <a class="component-website" href="https://www.nps.gov/colm/" target="_blank">nps.gov/colm · Grand Junction, Colorado</a>
-      <div class="component-photo">
-        <img src="https://images.squarespace-cdn.com/content/v1/61955229b199ca1cee0de26d/477e0a53-1446-4f1c-be8d-569fe58fcf02/how-to-elope-at-colorado-national-monument-4.jpg" alt="Colorado National Monument red rock ceremony site">
-        <span class="photo-credit">Colorado National Monument</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://images.squarespace-cdn.com/content/v1/61955229b199ca1cee0de26d/7cac37d9-dee6-4bd7-99c3-61b00dc35d81/colorado-national-monument-fall-elopement-2.jpg" alt="Colorado National Monument red rock landscape"></div>
+          <div class="gallery-item"><img src="https://images.squarespace-cdn.com/content/v1/61955229b199ca1cee0de26d/477e0a53-1446-4f1c-be8d-569fe58fcf02/how-to-elope-at-colorado-national-monument-4.jpg" alt="Colorado National Monument red rock ceremony site"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -1346,9 +1396,11 @@
       <div class="component-label">Saturday Adventure</div>
       <h3 class="component-name">JR's Carriage Service</h3>
       <a class="component-website" href="https://jrscarriage.com/" target="_blank">jrscarriage.com · Palisade Wine Country</a>
-      <div class="component-photo">
-        <img src="https://www.colorado.com/_next/image?url=https%3A%2F%2Fapi.colorado.com%2Fsites%2Fdefault%2Ffiles%2Flisting_images%2Fprofile%2F5649%2Fjrs.jpg&w=3840&q=75" alt="Horse-drawn carriage wine tour">
-        <span class="photo-credit">JR's Carriage Service</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://www.colorado.com/_next/image?url=https%3A%2F%2Fapi.colorado.com%2Fsites%2Fdefault%2Ffiles%2Flisting_images%2Fprofile%2F5649%2Fjrs.jpg&w=3840&q=75" alt="Horse-drawn carriage wine tour"></div>
+          <div class="gallery-item"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/8b/91/6f/wedding-carriage-in-collbran.jpg?w=800&h=600&s=1" alt="JR's Carriage Service carriage"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -1421,9 +1473,14 @@
       <div class="component-label">Lodging</div>
       <h3 class="component-name">The Victorian B&B</h3>
       <a class="component-website" href="https://www.victoriansteamboat.com" target="_blank">victoriansteamboat.com · Steamboat Springs, Colorado</a>
-      <div class="component-photo">
-        <img src="https://bookingenginecdn.hostaway.com/listing/155042-393979-DY55Z3JPwHBIfqLwl1QVrHLGF9WRi3FFi1-Dby243kY-6830efd90eae9?width=2560&quality=70&format=webp&v=2" alt="The Victorian B&B exterior">
-        <span class="photo-credit">The Victorian B&B</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://bookingenginecdn.hostaway.com/listing/155042-393979-DY55Z3JPwHBIfqLwl1QVrHLGF9WRi3FFi1-Dby243kY-6830efd90eae9?width=2560&quality=70&format=webp&v=2" alt="The Victorian B&B exterior"></div>
+          <div class="gallery-item"><img src="https://bookingenginecdn.hostaway.com/listing/155042-393979-TbhGHnNtn5KXe6M5r6A4rdeWdbpr0w2JraYv3BBVyl4-6830efe2ceb53?width=2560&quality=70&format=webp&v=2" alt="The Victorian B&B interior"></div>
+          <div class="gallery-item"><img src="https://bookingenginecdn.hostaway.com/listing/155042-393979-3pCiAoTaEna24bFmQiODWyIJ75Ozx98tcuLDUkNE7IM-6830efd096fdd?width=2560&quality=70&format=webp&v=2" alt="The Victorian B&B bedroom"></div>
+          <div class="gallery-item"><img src="https://bookingenginecdn.hostaway.com/listing/155042-393979-nszLQZxGRUjEExJECIuyJ79IRxFzxUh0T7p6YtwY97U-6830efddb2eaa?width=2560&quality=70&format=webp&v=2" alt="The Victorian B&B amenities"></div>
+          <div class="gallery-item"><img src="https://bookingenginecdn.hostaway.com/listing/155042-393979-6FKAN5uq0dtUVp8-xOdtxShj3chAHys6HOKhEdJGeM4-6830efeea00b7?width=2560&quality=70&format=webp&v=2" alt="The Victorian B&B details"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -1456,9 +1513,11 @@
       <div class="component-label">Friday Dinner</div>
       <h3 class="component-name">Café Diva</h3>
       <a class="component-website" href="https://www.cafediva.com" target="_blank">cafediva.com · Steamboat Springs</a>
-      <div class="component-photo">
-        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepLu6HXneX6l-LbFaoONE9PT44VcBfu2gI1_aE-MSOdfGKDhaj_gP-B8MkfzIy7KzwLhRMfD2dvIhqc7zTx9oitfhWIwookj87B3igdcKSpJ_aHddo0SSkXRibNAnTv8_Zkf5h_=s1360-w1360-h1020-rw" alt="Café Diva dining room">
-        <span class="photo-credit">Café Diva</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepLu6HXneX6l-LbFaoONE9PT44VcBfu2gI1_aE-MSOdfGKDhaj_gP-B8MkfzIy7KzwLhRMfD2dvIhqc7zTx9oitfhWIwookj87B3igdcKSpJ_aHddo0SSkXRibNAnTv8_Zkf5h_=s1360-w1360-h1020-rw" alt="Café Diva dining room"></div>
+          <div class="gallery-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwerjVMwnVCPuKwboCFgCGSG8yAdIQ_Cvesgu8gyV9okPBXO49i7oSpXzbq3PkYn0bfjq0ugkneZ55xLI1NSHn-MhdPgNdfrHnLq1tFGcjKMHjqptLmgIelNSuMfYGWduWKcQDvo=s1360-w1360-h1020-rw" alt="Café Diva interior"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -1491,9 +1550,11 @@
       <div class="component-label">Ceremony</div>
       <h3 class="component-name">Pearl Lake State Park</h3>
       <a class="component-website" href="https://cpw.state.co.us/placestogo/parks/PearlLake" target="_blank">cpw.state.co.us · Pearl Lake, Colorado</a>
-      <div class="component-photo">
-        <img src="https://storymakerphoto.com/wp-content/uploads/2024/07/steamboat-springs-wedding-82.jpg" alt="Pearl Lake alpine ceremony setting">
-        <span class="photo-credit">Pearl Lake State Park</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://storymakerphoto.com/wp-content/uploads/2024/07/steamboat-springs-wedding-42-1024x683.jpg" alt="Pearl Lake alpine setting"></div>
+          <div class="gallery-item"><img src="https://storymakerphoto.com/wp-content/uploads/2024/07/steamboat-springs-wedding-82.jpg" alt="Pearl Lake alpine ceremony setting"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
@@ -1530,9 +1591,10 @@
       <div class="component-label">Saturday Adventure</div>
       <h3 class="component-name">Wild West Balloon Adventures</h3>
       <a class="component-website" href="https://www.wildwestballooning.com" target="_blank">wildwestballooning.com · Yampa Valley</a>
-      <div class="component-photo">
-        <img src="https://lh3.googleusercontent.com/p/AF1QipM0pAbRSrx0BbOMc24TAHowwYgcQpwDYY90_eH3=s1360-w1360-h1020-rw" alt="Hot air balloon over Yampa Valley at sunrise">
-        <span class="photo-credit">Wild West Balloon Adventures</span>
+      <div class="component-photo-gallery">
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://lh3.googleusercontent.com/p/AF1QipM0pAbRSrx0BbOMc24TAHowwYgcQpwDYY90_eH3=s1360-w1360-h1020-rw" alt="Hot air balloon over Yampa Valley at sunrise"></div>
+        </div>
       </div>
       <div class="component-body">
         <ul class="details-list">
