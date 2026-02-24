@@ -29,6 +29,15 @@
     overflow-x: hidden;
   }
 
+  /* ─── FILM GRAIN OVERLAY ──────────────────────── */
+  body::after {
+    content: '';
+    position: fixed; inset: 0;
+    pointer-events: none; z-index: 9999;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.038'/%3E%3C/svg%3E");
+    opacity: 0.45;
+  }
+
   /* ─── HERO ─────────────────────────────────────── */
   .hero {
     height: 100vh;
@@ -44,7 +53,7 @@
     background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1800&q=85&fit=crop');
     background-size: cover;
     background-position: center 30%;
-    filter: brightness(0.4) saturate(0.75);
+    filter: brightness(0.5) saturate(0.8);
     animation: slowZoom 25s ease-in-out infinite alternate;
   }
   @keyframes slowZoom {
@@ -53,12 +62,14 @@
   }
   .hero-overlay {
     position: absolute; inset: 0;
-    background: linear-gradient(to bottom, rgba(26,26,24,0.15) 0%, rgba(26,26,24,0.0) 40%, rgba(26,26,24,0.75) 100%);
+    background:
+      radial-gradient(ellipse at center, transparent 35%, rgba(20,14,8,0.55) 100%),
+      linear-gradient(to bottom, rgba(30,20,10,0.18) 0%, rgba(26,26,24,0.0) 40%, rgba(20,16,12,0.82) 100%);
   }
   .hero-content {
     position: relative;
     text-align: center;
-    padding: 2rem;
+    padding: 3rem 2rem;
     animation: fadeUp 1.4s ease both;
   }
   @keyframes fadeUp {
@@ -153,11 +164,13 @@
   .loc-bg {
     position: absolute; inset: 0;
     background-size: cover; background-position: center;
-    filter: brightness(0.45) saturate(0.8);
+    filter: brightness(0.55) saturate(0.85);
   }
   .loc-gradient {
     position: absolute; inset: 0;
-    background: linear-gradient(to bottom, transparent 25%, rgba(26,26,24,0.93) 100%);
+    background:
+      radial-gradient(ellipse at center, transparent 40%, rgba(26,26,24,0.55) 100%),
+      linear-gradient(to bottom, transparent 25%, rgba(26,26,24,0.95) 100%);
   }
   .loc-header-content {
     position: relative;
@@ -168,7 +181,7 @@
   .loc-num {
     font-family: 'Playfair Display', serif;
     font-size: 5.5rem; font-weight: 700; font-style: italic;
-    color: rgba(184,147,90,0.12); line-height: 1;
+    color: rgba(184,147,90,0.08); line-height: 1;
     margin-bottom: -1.2rem;
   }
   .loc-eyebrow {
@@ -187,6 +200,15 @@
     font-style: italic; color: rgba(245,240,232,0.68);
     max-width: 580px; line-height: 1.55;
   }
+  .loc-tagline::first-letter {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    float: left;
+    line-height: 0.78;
+    margin: 0.06em 0.1em 0 0;
+    color: var(--gold-light);
+    font-style: normal;
+  }
   .loc-meta {
     display: flex; gap: 0.8rem; margin-top: 1.4rem; flex-wrap: wrap;
   }
@@ -195,7 +217,7 @@
     color: var(--gold-light);
     background: rgba(184,147,90,0.1);
     border: 1px solid rgba(184,147,90,0.22);
-    padding: 0.3rem 0.85rem; border-radius: 1px;
+    padding: 0.3rem 0.85rem; border-radius: 8px;
   }
 
   /* ─── COMPONENT SECTIONS ──────────────────────── */
@@ -203,8 +225,14 @@
 
   .component {
     margin-bottom: 4.5rem;
-    border-left: 2px solid var(--divider);
+    border-left: none;
     padding-left: 2rem;
+    position: relative;
+  }
+  .component::before {
+    content: '';
+    position: absolute; left: 0; top: 0; bottom: 0; width: 2px;
+    background: linear-gradient(to bottom, transparent 0%, var(--gold) 25%, var(--gold-light) 65%, transparent 100%);
   }
 
   .component-label {
@@ -239,7 +267,8 @@
     position: relative;
     height: 420px;
     overflow: hidden;
-    border-radius: 1px;
+    border-radius: 6px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
   }
   .gallery-item {
     position: absolute;
@@ -259,7 +288,7 @@
     display: block;
     transition: transform 0.7s ease;
   }
-  .gallery-item:hover img { transform: scale(1.03); }
+  .gallery-item:hover img { transform: scale(1.01); }
 
   /* Gallery navigation controls */
   .gallery-controls {
@@ -292,6 +321,7 @@
   .gallery-arrow:hover {
     background: var(--gold);
     transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(184, 147, 90, 0.4);
   }
   .gallery-arrow:active {
     transform: scale(0.95);
@@ -405,7 +435,8 @@
     position: relative;
     height: 420px;
     overflow: hidden;
-    border-radius: 1px;
+    border-radius: 6px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
   }
   .alternative-gallery-item {
     position: absolute;
@@ -423,7 +454,7 @@
     display: block;
     transition: transform 0.7s ease;
   }
-  .alternative-gallery-item:hover img { transform: scale(1.03); }
+  .alternative-gallery-item:hover img { transform: scale(1.01); }
   .alternative-gallery-controls {
     position: absolute;
     inset: 0;
@@ -454,6 +485,7 @@
   .alternative-gallery-arrow:hover {
     background: var(--gold);
     transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(184, 147, 90, 0.4);
   }
   .alternative-gallery-arrow:active {
     transform: scale(0.95);
@@ -489,10 +521,11 @@
     list-style: none;
   }
   .alternative-details-list li {
-    font-size: 0.88rem;
-    color: rgba(245,240,232,0.78);
-    line-height: 1.55;
-    padding: 0.5rem 0;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: rgba(245,240,232,0.8);
+    line-height: 1.75;
+    padding: 0.6rem 0;
     border-bottom: 1px solid rgba(184,147,90,0.1);
     display: flex;
     gap: 0.7rem;
@@ -501,9 +534,11 @@
 
   /* Use primary review panel styling for alternatives */
   .alternative-review-panel {
-    background: rgba(184,147,90,0.06);
-    padding: 1.2rem;
-    border-radius: 1px;
+    background: linear-gradient(135deg, rgba(184,147,90,0.08) 0%, rgba(184,147,90,0.02) 100%);
+    padding: 1.4rem 1.5rem;
+    border-radius: 4px;
+    border: 1px solid rgba(184,147,90,0.1);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
   }
   .alternative-review-panel .review-header {
     display: flex;
@@ -553,10 +588,10 @@
   }
   .alternative-review-panel .review-summary {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.0rem;
+    font-size: 1.05rem;
     font-style: italic;
-    color: rgba(245,240,232,0.72);
-    line-height: 1.65;
+    color: rgba(245,240,232,0.75);
+    line-height: 1.75;
     border-top: 1px solid rgba(184,147,90,0.15);
     padding-top: 0.9rem;
     margin-top: 0.2rem;
@@ -565,9 +600,11 @@
   /* ALTERNATIVE PRICE BAR - unified with primary */
   .alternative-price-bar {
     margin-top: 1.5rem;
-    padding: 0.9rem 1.2rem;
-    background: rgba(184,147,90,0.06);
-    border: 1px solid rgba(184,147,90,0.15);
+    padding: 1rem 1.4rem;
+    background: linear-gradient(135deg, rgba(184,147,90,0.08) 0%, rgba(184,147,90,0.02) 100%);
+    border: 1px solid rgba(184,147,90,0.1);
+    border-radius: 4px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -601,23 +638,25 @@
 
   .details-list { list-style: none; }
   .details-list li {
-    font-size: 0.88rem; color: rgba(245,240,232,0.78);
-    line-height: 1.55; padding: 0.5rem 0;
+    font-size: 0.95rem; color: rgba(245,240,232,0.8);
+    line-height: 1.75; padding: 0.6rem 0;
     border-bottom: 1px solid rgba(184,147,90,0.1);
     display: flex; gap: 0.7rem; align-items: flex-start;
   }
   .details-list li:last-child { border-bottom: none; }
+  .details-list li { font-weight: 400; }
   .details-list li::before {
-    content: '→'; color: var(--gold); flex-shrink: 0;
-    font-size: 0.75rem; margin-top: 0.2rem;
+    content: '◦'; color: var(--gold-light); flex-shrink: 0;
+    font-size: 1.1rem; margin-top: 0.05rem; line-height: 1;
   }
 
   /* REVIEW PANEL */
   .review-panel {
-    background: rgba(184,147,90,0.05);
-    border: 1px solid rgba(184,147,90,0.18);
+    background: linear-gradient(135deg, rgba(184,147,90,0.08) 0%, rgba(184,147,90,0.02) 100%);
+    border: 1px solid rgba(184,147,90,0.1);
     padding: 1.4rem 1.5rem;
-    border-radius: 1px;
+    border-radius: 4px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
   }
   .review-header {
     display: flex; align-items: center;
@@ -650,9 +689,9 @@
   .google-link:hover { background: rgba(184,147,90,0.12); }
   .review-summary {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.0rem; font-style: italic;
-    color: rgba(245,240,232,0.72);
-    line-height: 1.65;
+    font-size: 1.05rem; font-style: italic;
+    color: rgba(245,240,232,0.75);
+    line-height: 1.75;
     border-top: 1px solid rgba(184,147,90,0.15);
     padding-top: 0.9rem;
     margin-top: 0.2rem;
@@ -668,9 +707,11 @@
   /* PRICE + PERMIT BARS */
   .price-bar {
     margin-top: 1.5rem;
-    padding: 0.9rem 1.2rem;
-    background: rgba(184,147,90,0.06);
-    border: 1px solid rgba(184,147,90,0.15);
+    padding: 1rem 1.4rem;
+    background: linear-gradient(135deg, rgba(184,147,90,0.08) 0%, rgba(184,147,90,0.02) 100%);
+    border: 1px solid rgba(184,147,90,0.1);
+    border-radius: 4px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
     display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
   }
   .price-label {
@@ -684,20 +725,28 @@
 
   .permit-alert {
     margin-top: 1rem;
-    padding: 0.9rem 1.2rem;
+    padding: 1rem 1.4rem;
     background: rgba(184,147,90,0.07);
-    border-left: 3px solid var(--gold);
-    font-size: 0.8rem;
-    color: rgba(245,240,232,0.72);
-    line-height: 1.55;
+    border-left: 4px solid var(--gold-light);
+    border-radius: 8px 0 0 8px;
+    font-size: 0.85rem;
+    color: rgba(245,240,232,0.75);
+    line-height: 1.7;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   }
   .permit-alert strong { color: var(--gold-light); font-weight: 500; }
 
   /* SECONDARY COMPONENTS (no photos) */
   .secondary-component {
     margin-bottom: 3rem;
-    border-left: 2px solid var(--divider);
+    border-left: none;
     padding-left: 2rem;
+    position: relative;
+  }
+  .secondary-component::before {
+    content: '';
+    position: absolute; left: 0; top: 0; bottom: 0; width: 2px;
+    background: linear-gradient(to bottom, transparent 0%, var(--gold) 25%, var(--gold-light) 65%, transparent 100%);
   }
   .secondary-component-label {
     font-size: 0.58rem; letter-spacing: 0.38em; text-transform: uppercase;
@@ -731,15 +780,16 @@
   }
   .secondary-details-list { list-style: none; }
   .secondary-details-list li {
-    font-size: 0.88rem; color: rgba(245,240,232,0.78);
-    line-height: 1.55; padding: 0.5rem 0;
+    font-size: 0.95rem; color: rgba(245,240,232,0.8);
+    line-height: 1.75; padding: 0.6rem 0;
     border-bottom: 1px solid rgba(184,147,90,0.1);
     display: flex; gap: 0.7rem; align-items: flex-start;
   }
   .secondary-details-list li:last-child { border-bottom: none; }
+  .secondary-details-list li { font-weight: 400; }
   .secondary-details-list li::before {
-    content: '→'; color: var(--gold); flex-shrink: 0;
-    font-size: 0.75rem; margin-top: 0.2rem;
+    content: '◦'; color: var(--gold-light); flex-shrink: 0;
+    font-size: 1.1rem; margin-top: 0.05rem; line-height: 1;
   }
 
   /* BUDGET SUMMARY */
@@ -748,11 +798,13 @@
     padding: 0 2rem;
   }
   .budget-inner {
-    background: rgba(184,147,90,0.05);
-    border: 1px solid rgba(184,147,90,0.2);
-    padding: 1.4rem 2rem;
+    background: linear-gradient(135deg, rgba(184,147,90,0.08) 0%, rgba(184,147,90,0.02) 100%);
+    border: 1px solid rgba(184,147,90,0.1);
+    border-radius: 4px;
+    padding: 1.6rem 2rem;
     display: flex; align-items: center;
     justify-content: space-between; gap: 2rem; flex-wrap: wrap;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
   }
   .budget-left { }
   .budget-tag {
@@ -784,19 +836,19 @@
     position: absolute; inset: 0;
     background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1800&q=85&fit=crop');
     background-size: cover; background-position: center;
-    filter: brightness(0.2) saturate(0.6);
+    filter: brightness(0.25) saturate(0.65);
   }
   .closing-content { position: relative; max-width: 680px; margin: 0 auto; }
   .closing h2 {
     font-family: 'Playfair Display', serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
     font-weight: 400; font-style: italic;
-    color: var(--white); margin-bottom: 1.2rem; line-height: 1.1;
+    color: var(--white); margin-bottom: 1.2rem; line-height: 1.15;
   }
   .closing p {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.2rem; color: rgba(245,240,232,0.65);
-    font-style: italic; line-height: 1.7; margin-bottom: 2.5rem;
+    font-size: 1.25rem; color: rgba(245,240,232,0.7);
+    font-style: italic; line-height: 1.8; margin-bottom: 2.5rem;
   }
   .closing-date {
     font-size: 0.66rem; letter-spacing: 0.3em; text-transform: uppercase;
@@ -966,10 +1018,10 @@
           </div>
           <div class="alternative-body">
             <ul class="alternative-details-list">
-              <li>→ Classic upscale steakhouse with London gentleman's club vibes</li>
-              <li>→ Tableside Caesar salad, prime cuts, award-winning wine list</li>
-              <li>→ Intimate, sophisticated atmosphere ideal for special occasions</li>
-              <li>→ Excellent service and refined dining experience</li>
+              <li>◦ Classic upscale steakhouse with London gentleman's club vibes</li>
+              <li>◦ Tableside Caesar salad, prime cuts, award-winning wine list</li>
+              <li>◦ Intimate, sophisticated atmosphere ideal for special occasions</li>
+              <li>◦ Excellent service and refined dining experience</li>
             </ul>
             <div class="alternative-review-panel">
               <div class="review-header">
@@ -1050,10 +1102,10 @@
           </div>
           <div class="alternative-body">
             <ul class="alternative-details-list">
-              <li>→ High alpine pass at 12,095 ft with dramatic Maroon Peak views</li>
-              <li>→ Stunning overlooks, waterfalls, and pristine alpine scenery</li>
-              <li>→ Challenging but beautiful drive ideal for adventure-seeking couples</li>
-              <li>→ Exceptional photography potential with dramatic mountain backdrops</li>
+              <li>◦ High alpine pass at 12,095 ft with dramatic Maroon Peak views</li>
+              <li>◦ Stunning overlooks, waterfalls, and pristine alpine scenery</li>
+              <li>◦ Challenging but beautiful drive ideal for adventure-seeking couples</li>
+              <li>◦ Exceptional photography potential with dramatic mountain backdrops</li>
             </ul>
             <div class="alternative-review-panel">
               <div class="review-header">
@@ -1596,10 +1648,10 @@
           </div>
           <div class="alternative-body">
             <ul class="alternative-details-list">
-              <li>→ Private chef catering service with farm-to-table Colorado cuisine</li>
-              <li>→ Customized multi-course dinners tailored to your preferences</li>
-              <li>→ Chef Jenn praised for kindness, flexibility, and attention to dietary needs</li>
-              <li>→ Perfect for ultra-intimate, personalized dining at your lodging</li>
+              <li>◦ Private chef catering service with farm-to-table Colorado cuisine</li>
+              <li>◦ Customized multi-course dinners tailored to your preferences</li>
+              <li>◦ Chef Jenn praised for kindness, flexibility, and attention to dietary needs</li>
+              <li>◦ Perfect for ultra-intimate, personalized dining at your lodging</li>
             </ul>
             <div class="alternative-review-panel">
               <div class="review-header">
@@ -1933,10 +1985,10 @@
           </div>
           <div class="alternative-body">
             <ul class="alternative-details-list">
-              <li>→ Panoramic Grand Lake and mountain views with wood-burning fireplace</li>
-              <li>→ Specialties include elk chops, filet mignon, lobster mac & cheese</li>
-              <li>→ Cozy, rustic ambiance with recently improved food quality</li>
-              <li>→ Friendly, attentive service in historic lodge setting</li>
+              <li>◦ Panoramic Grand Lake and mountain views with wood-burning fireplace</li>
+              <li>◦ Specialties include elk chops, filet mignon, lobster mac & cheese</li>
+              <li>◦ Cozy, rustic ambiance with recently improved food quality</li>
+              <li>◦ Friendly, attentive service in historic lodge setting</li>
             </ul>
             <div class="alternative-review-panel">
               <div class="review-header">
@@ -2365,10 +2417,10 @@
           </div>
           <div class="alternative-body">
             <ul class="alternative-details-list">
-              <li>→ Private wedding venue with landscaped gardens and mountain views</li>
-              <li>→ Dedicated event space with on-site facilities and private parking</li>
-              <li>→ More controlled setting than public lands with professional event support</li>
-              <li>→ Full amenities and flexible ceremony configuration options</li>
+              <li>◦ Private wedding venue with landscaped gardens and mountain views</li>
+              <li>◦ Dedicated event space with on-site facilities and private parking</li>
+              <li>◦ More controlled setting than public lands with professional event support</li>
+              <li>◦ Full amenities and flexible ceremony configuration options</li>
             </ul>
             <div class="alternative-review-panel">
               <div class="review-header">
@@ -2616,10 +2668,10 @@
           </div>
           <div class="alternative-body">
             <ul class="alternative-details-list">
-              <li>→ Stunning Yampa River views with unique riverfront location</li>
-              <li>→ Farm-to-table approach with creative, seasonal menu</li>
-              <li>→ Exceptional wine program with complimentary champagne for celebrations</li>
-              <li>→ Attentive service and romantic ambiance for special occasions</li>
+              <li>◦ Stunning Yampa River views with unique riverfront location</li>
+              <li>◦ Farm-to-table approach with creative, seasonal menu</li>
+              <li>◦ Exceptional wine program with complimentary champagne for celebrations</li>
+              <li>◦ Attentive service and romantic ambiance for special occasions</li>
             </ul>
             <div class="alternative-review-panel">
               <div class="review-header">
@@ -2737,10 +2789,10 @@
           </div>
           <div class="alternative-body">
             <ul class="alternative-details-list">
-              <li>→ Private 2-hour guided horseback ride through Yampa Valley</li>
-              <li>→ Beautiful scenery with well-cared-for horses and professional guides</li>
-              <li>→ Suitable for all experience levels including beginners</li>
-              <li>→ Active outdoor celebration with stunning mountain views and peaceful experience</li>
+              <li>◦ Private 2-hour guided horseback ride through Yampa Valley</li>
+              <li>◦ Beautiful scenery with well-cared-for horses and professional guides</li>
+              <li>◦ Suitable for all experience levels including beginners</li>
+              <li>◦ Active outdoor celebration with stunning mountain views and peaceful experience</li>
             </ul>
             <div class="alternative-review-panel">
               <div class="review-header">
