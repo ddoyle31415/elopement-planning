@@ -11,8 +11,7 @@ No build system, package manager, or test suite — this is static HTML and Mark
 ## File Structure
 
 - `locations/*.md` — Source-of-truth research notes for each location (one file per location). More detailed than the HTML: includes couples massage, Thursday dinner, private car service, and Saturday brunch options not shown in the guide.
-- `elopement_guide_full.html` — The full rendered guide with all six locations (Aspen, Grand Lake, Boulder, Estes Park, Steamboat Springs, Palisade). This is the primary deliverable — the document shown to the couple.
-- `elopement_guide_template.html` — Blank template for adding new locations. Copy the `<section class="location">` block for each new location. All placeholders use `[CAPS_IN_BRACKETS]` format.
+- `index.html` — The full rendered guide with all six locations (Aspen, Grand Lake, Boulder, Estes Park, Steamboat Springs, Palisade). This is the primary deliverable — the document shown to the couple.
 
 ## HTML Architecture
 
