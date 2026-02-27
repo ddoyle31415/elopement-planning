@@ -38,14 +38,6 @@ The guide is a single self-contained HTML file with no external JS and no build 
 - `.review-panel` — contains `.review-stars` (use `.star` / `.star-empty`), `.review-score`, `.review-summary`, `.review-quote`
 - `.price-bar` — estimated cost footer
 
-## Key Discrepancies to Be Aware Of
-
-The `locations/` markdown files are the research source; the HTML was written separately and may differ:
-- **Palisade**: `.md` lists Colorado National Monument as ceremony site; HTML uses a generic vineyard ceremony instead
-- **Aspen**: `.md` lists two Friday dinner options (Bosq, The Monarch); HTML omits the Friday dinner component entirely
-- Some locations in the markdown have more components (couples massage, private car, Thursday dinner) that are not in the HTML guide
-
-When updating the HTML, cross-reference the corresponding `.md` file for accurate vendor names, URLs, phone numbers, and pricing.
 
 ## Instructions
 
