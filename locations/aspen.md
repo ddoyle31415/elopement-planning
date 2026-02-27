@@ -7,20 +7,18 @@
     - Photo: https://images.trvl-media.com/lodging/1000000/20000/15900/15810/fb52b13d.jpg?impolicy=resizecrop&rw=1200&ra=fit
     - Google Review Summary: Rated as the #1 hotel in Aspen and Colorado, and #5 in the United States. Reviewers consistently praise world-class service and exceptional amenities, with special mention of Element 47 restaurant. Forbes Travel Guide has recognized the hotel for three decades as a Five-Star property.
     - Google rating: 4.7 stars (based on aggregated reviews from multiple platforms)
+    - Pricing: $1,700–$2,000 / night (August low) · ~$5,100–$6,000 for 3 nights
 ---
 
 ## Ceremony Location
+
 - [Independence Pass](https://www.aspenchamber.org/blog/eloping-maroon-bells-everything-you-need-know) *(primary)* — Stunning overlooks, waterfalls, and alpine scenery along the pass connecting Aspen to Twin Lakes — parking permit only (~$10)
     - Photo: https://wethelightphotography.com/wp-content/uploads/colorado_adventure_elopement_photographer_0217-scaled-1.jpg
     - Photo: https://shareedavenport.com/wp-content/uploads/2018/11/01-9696-post/Twin-Lakes-Colorado-Elopement-Independence-Pass-Aspen-Colorado-Photographer000000036-1.jpg
     - Photo: https://content1.getnarrativeapp.com/static/3a9b5cf7-351d-4a4f-9ecb-58c9a6b68343/Colorado-Elopement-Photographer1.jpg?w=1500
     - Google Review Summary: Highly rated for dramatic scenic beauty, particularly the overlooks and waterfalls. Reviewers highlight the challenging and beautiful drive, especially for adventure seekers. The pass is frequently mentioned as one of Colorado's most scenic routes, ideal for elopement photography and memorable moments.
     - Google rating: 4.8 stars (based on AllTrails and aggregated reviews)
-- [Maroon Bells Amphitheatre](https://www.recreation.gov/camping/maroon-bells-amphitheatre/r/campgroundDetails.do?contractCode=NRSO&parkId=72006) *(backup)* — The most photographed mountain backdrop in North America, private 2-hour reserved ceremony slot with Maroon Lake views — $200
-    - Photo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Dz3_SyfQJGLmtpmGy2P1tsOvwCxcJs6Efg&s
-    - Photo: https://images.squarespace-cdn.com/content/v1/601ed524dacf4b64ff2b7ba8/1614657961300-0UTUNDCVGKPF709AIGE3/Aspen-Mountain-Elopement_0008.jpg
-    - Google Review Summary: Universally praised as the most iconic and photogenic location in the Aspen area. Visitors consistently highlight the stunning views of the mountains and lake, and appreciate the accessibility for special events. Most reviews emphasize that the location is a bucket-list destination for photographers and nature lovers.
-    - Google rating: 4.6 stars (based on aggregated reviews from Yelp and TripAdvisor)
+    - Pricing: No permit necessary    
 
 ## Friday Ceremony Dinner
 - [Bosq](https://www.bosqaspen.com/) — Aspen's only Michelin-starred restaurant; locally foraged, globally inspired seasonal tasting menu by Chef Barclay Dodge — ~$150–$200/person
@@ -40,8 +38,10 @@
     - Photo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdnTP9rC82lmH4mnRV10cpPwAZpPe24k0gKw&s
     - Google Review Summary: Highly praised for professional and experienced pilots (20+ years FAA certified), with exceptional attention to safety and personalized service. Reviewers consistently highlight the breathtaking views, smooth flight experience, and the champagne breakfast as standout elements. Customers frequently recommend it as a must-do activity.
     - Google rating: 4.5 stars
+    - Pricing: $395 per person, $790 for two
 
 ## Couples Massage
 - [Yarrow, an Auberge Spa at Hotel Jerome](https://auberge.com/hotel-jerome/wellness/spa/) — 5-star alpine-inspired boutique spa with customizable botanical treatments at Aspen's iconic Hotel Jerome — ~$543/person (90 min, incl. 22% service charge), ~$1,086 total
     - Google Review Summary: Guests praise the spa's professional and accommodating staff, the tranquil alpine-inspired setting, and the high-quality botanical treatments. The intimate boutique atmosphere and customizable treatment options are frequently highlighted as exceptional. Reviewers note the spa as a perfect complement to a luxury hotel experience.
     - Google rating: 4.6 stars
+    - Pricing: ~$600 per person, $1,200 for two

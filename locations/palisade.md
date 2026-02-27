@@ -10,16 +10,24 @@
     - Google rating: 4.8/5 (Google, 136 reviews)
 
 ## Ceremony Location
-- [Colorado National Monument](https://www.nps.gov/colm/), Dramatic red rock canyons and overlooks 10 minutes from downtown, requires NPS special use permit, ~$150-300
+- [Colorado National Monument](https://www.nps.gov/colm/), Dramatic red rock canyons and overlooks 10 minutes from downtown, requires NPS special use permit
     - Photo: https://www.shellcreekphoto.com/wp-content/uploads/2023/02/Colorado-National-Monument-elopement-37.jpg
     - Photo: https://images.squarespace-cdn.com/content/v1/61955229b199ca1cee0de26d/7cac37d9-dee6-4bd7-99c3-61b00dc35d81/colorado-national-monument-fall-elopement-2.jpg
     - Photo: https://images.squarespace-cdn.com/content/v1/61955229b199ca1cee0de26d/477e0a53-1446-4f1c-be8d-569fe58fcf02/how-to-elope-at-colorado-national-monument-4.jpg
     - Photo: https://jendzphotography.com/wp-content/uploads/2025/04/colorado-elopement-358-.jpg
     - Google Review Summary: The National Park Service website confirms a $150 permit is required for special use permits/ceremonies. Simple ceremonies don't require permits, while styled shoots and photography workshops do. Photographers report the process as "easy, stress-free" with scenic natural beauty. Restrictions include no confetti, no tents/arches, no amplified music.
     - Google rating: 4.8/5 (Photographer & Couple Reviews)
-- [Rocky Mountain Wedding Park](https://www.rockymountainweddingpark.com) *(backup)* — Private wedding venue with landscaped gardens and mountain views, dedicated event space with on-site facilities, ~$500-800
+    - Pricing: $150 permit    
+    
+- [Rocky Mountain Wedding Park](https://www.rockymountainweddingpark.com) *(backup)* — Private wedding venue with landscaped gardens and mountain views, dedicated event space with on-site facilities
+    - Photo: https://larsenphoto.co/wp-content/uploads/2019/10/windy-rmnp-elopement-24.jpg
+    - Photo: https://leahgoetzel.com/wp-content/uploads/sites/13453/2021/08/3M-Curve-Wedding-Rocky-Mountai-1-8.jpg
+    - Photo: https://authenticcollective.blog/wp-content/uploads/2022/11/Rocky-Mountain-National-Park-Wedding-6-scaled.jpg" alt="3M Curve Rocky Mountain National Park ceremony site
+    Photo: https://hennessyphotoco.com/wp-content/uploads/2024/04/rocky-mountain-national-park-wedding-scaled.jpg
     - Google Review Summary: Praised as a beautiful alternative ceremony venue with scenic Colorado mountain views. Couples appreciate the flexibility and gorgeous outdoor setting. No public access ensures a private, controlled event environment with professional venue support and amenities.
     - Google rating: 4.6/5 (Couples reviews)
+    - Pricing: $975
+
 
 ## Friday Wedding Dinner
 - [The Winery Restaurant](https://winery-restaurant.com/), Award-winning fine dining in converted carriage house, quiet elegant atmosphere, ~$150-200 for two
@@ -35,11 +43,13 @@
     - Photo: https://assets.simpleviewinc.com/simpleview/image/upload/crm/grandjunctionco/385493785_10163445998449762_5925158074304219015_n_2C7D7529-A5E7-4FEB-90F403F6F0801D3C_09e16379-8388-4fd8-a8df2ea4e21f6985.jpg
     - Google Review Summary: Generally positive reviews praising "top notch" service with "delightful and knowledgeable" drivers. Customers enjoyed the unique horse-and-carriage experience visiting multiple wineries. Some reviews note inconsistency in service quality between tours, with occasionally inattentive hosts. One reviewer noted high pricing relative to limited wine servings.
     - Google rating: 4.9/5 (Google, 191 reviews)
+    - Pricing: $132 per person, $264 for two    
 
 ## Couples Massage
 - [Body Therapeutics](https://www.bodytmm.com/packages-and-memberships), "Lovers Retreat" package with couples salt stone massage, paraffin treatment, infrared sauna, ~$315 for 60-min
     - Google Review Summary: Highly acclaimed spa with overwhelmingly positive reviews. Therapists praised as "extremely qualified" and skilled at addressing tension. Customers report "one of the best massages I've ever had" experiences. Professional staff, attentive service, and reasonable pricing for high-quality services. Specializes in therapeutic massage, Himalayan salt stone, cupping, lymphatic work, and Ashiatsu massage.
     - Google rating: 4.5/5 (Google, 213 reviews) — #1 for Day Spas, Massage Therapy & Reflexology in Grand Junction
+    - Pricing: $315 for two    
 
 ## Thursday Dinner
 - [626 on Rood](https://www.626onrood.com/), Casual fine dining with 30 wines by glass, seasonal locally sourced menu, craft cocktails, ~$80-120 for two

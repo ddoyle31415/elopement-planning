@@ -18,12 +18,14 @@
     - Photo: https://hennessyphotoco.com/wp-content/uploads/2024/04/rocky-mountain-national-park-wedding-scaled.jpg
     - Google Review Summary: Rocky Mountain National Park permits are highly sought-after and coveted by couples. 3M Curve and Hidden Valley are considered iconic elopement locations with stunning mountain backdrops. Popular choice for intimate ceremonies with unparalleled natural scenery.
     - Google rating: 4.9/5 (Photographer & Couple Reviews)
+    - Pricing: $300 permit, separate timed entry not required    
 
 - [Rocky Mountain Wedding Park](https://www.rockymountainweddingpark.com) · if RMNP permit unavailable
     - Photo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlT0n8TTO5fpUpMOeb4uRbvMVZkZ0gZj8WIg&s
     - Photo: https://authenticcollective.blog/wp-content/uploads/2022/11/Rocky-Mountain-National-Park-Wedding-7-681x1024.jpg
     - Google Review Summary: Praised as a beautiful alternative ceremony venue with scenic Colorado mountain views. Couples appreciate the flexibility and gorgeous outdoor setting.
     - Google rating: Not found in search results (alternative venue)
+    - Pricing: $975
 
 ## Friday Dinner
 - [Twin Owls Steakhouse](https://www.taharaa.com) · at Taharaa Mountain Lodge
@@ -43,6 +45,7 @@
 *(Hot Chocolate on the Rocks package)*
     - Google Review Summary: Award-winning spa celebrating 32 years of excellence. Voted best spa in Estes Park 2022-2025 and recognized as one of Colorado's "MUST VISIT" spas by Denver Post. Reviewers consistently praise the friendly and welcoming therapists, incredibly relaxing atmosphere with soothing music and calming scents. One reviewer called it "the best 90 minutes I could have ever asked for."
     - Google rating: 4.9/5 (Google, 372 reviews)
+    - $225 per person, $450 for two    
 
 ## Saturday Adventure
 - [Grand Adventure Balloon Tours](https://grandadventureballoon.com) · sunrise flight, Fraser Valley
@@ -50,6 +53,7 @@
     - Photo:
     - Google Review Summary: Highly rated hot air balloon company with a perfect safety record since 1994. Operated by FAA Commercial Balloon Pilot Captain Jack. Reviewers rave about the magical experience of floating from soft grass to 1000 feet and ascending to 2500 feet above the Fraser Valley. Described as the closest balloon ride to Estes Park (1 hour 45 minutes away).
     - Google rating: 4.8/5 (Google, 39 reviews)
+    - Pricing: $425 per person, $850 for two    
 
 ## Thursday Dinner
 - [Cascades at The Stanley Hotel](https://stanley.hyatt.com)

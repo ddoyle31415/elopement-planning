@@ -1,12 +1,13 @@
 # Boulder Elopement Weekend 
 
 ## Lodging
-- [The Bradley Boulder Inn](https://www.bradleyboulderinn.com) — B&B, ~$275/night *(top pick)*
+- [The Bradley Boulder Inn](https://www.thebradleyboulder.com) — B&B, ~$275/night *(top pick)*
     - Photo: https://lh3.googleusercontent.com/p/AF1QipNke3Xa057eSkpUCEhr8CTOGgiNJPfO8C95ni9F=s1360-w1360-h1020-rw
     - Photo: https://lh3.googleusercontent.com/p/AF1QipPHvitpp3Ij_FKLZNeZb05EdzUrJtTYoFTSlHNR=s1360-w1360-h1020-rw
     - Photo: https://lh3.googleusercontent.com/p/AF1QipPHjuspJAivnqXlUsyDS3farjWJeqzvQg7IR7nv=s1360-w1360-h1020-rw
     - Google Review Summary: The Bradley Boulder Inn is a highly rated boutique B&B with exceptional service and charming accommodations. Guests consistently praise the warm, inviting atmosphere, attentive staff, and well-maintained facilities. The inn is ranked #1 of 3 B&Bs/inns in Boulder on TripAdvisor and receives strong marks for its personal touch and quality amenities.
     - Google rating: 4.9/5 (Google, 370 reviews)
+    - Pricing: $750 per night, $2,250 for 3 nights
 
 
 - [St. Julien Hotel & Spa](https://www.stjulien.com) — Luxury hotel, ~$425/night *(full-service alt)*
@@ -16,6 +17,7 @@
     - Photo: https://lh3.googleusercontent.com/p/AF1QipOMaNiwijjWhqCT7iglR09uHt234_JJnwZvdoxK=s1360-w1360-h1020-rw
     - Google Review Summary: St. Julien is a luxury hotel praised for its plush bedding, spacious rooms, and well-maintained facilities. Guests consistently commend the inviting atmosphere and attentive service, though a few note occasional inconsistencies. The hotel maintains an AAA 4-diamond rating and is a popular choice for special occasions and weddings.
     - Google rating: 4.8/5 (WeddingWire, 73 reviews)
+    - Pricing: $600 per night, $1,800 for 3 nights
 
 ## Ceremony
 - [Lost Gulch Overlook](https://boco.colorado.gov/parks-open-space) — Flagstaff Mountain, Boulder
@@ -23,6 +25,7 @@
     - Photo: https://lh3.googleusercontent.com/gps-cs-s/AHVAwer4alH99OmMbX8AW7LHpQ26OoFnPAZgjo-jfzswKsZ0ICAhi0tc3DtNwGJG9H6O_Xyz4w32gHrklAmRlrthVS0sG5GvOxKpQtH4bgQraRxOuSyOVAFAnSWDTnYjhYl2y6DCpA=s1360-w1360-h1020-rw
     - Photo: https://caraelizphoto.com/wp-content/uploads/2020/11/20201009-Colorado-LostGulch-DominiqueThomas-169.jpg
     - Google rating: 4.7/5 (Google Maps & AllTrails)
+    - Pricing: $50 photographer permit    
 
 - [OSMP Permit](https://boco.colorado.gov/parks-open-space/permits-and-reservations) — Required for photographer (~$100)
     - Photo: https://wethelightphotography.com/wp-content/uploads/Artists_Point_Elopement_0278-1024x683.jpg
@@ -49,11 +52,14 @@
 - [Woodhouse Spa Boulder](https://www.woodhousespas.com/boulder) — ~$310 for 90 min
     - Google Review Summary: Woodhouse Spa Boulder is highly praised for its welcoming staff, cozy and peaceful ambiance, and exceptional spa services. Clients consistently commend the professional therapists and relaxing environment. The spa is known for delivering rejuvenating treatments in a serene setting that promotes relaxation and well-being.
     - Google rating: 4.8/5 (Google, 280 reviews)
+    - Pricing $300 per person, $600 for two    
 
 ## Saturday Morning
 - [Fair Winds Hot Air Balloon](https://www.fairwindsballoon.com) — ~$550 for two
     - Google Review Summary: Fair Winds Hot Air Balloon receives glowing reviews for its professional and attentive staff, particularly crew members Jeff and Toby. Guests consistently praise the experience as safe, fun, and memorable, with staff going the extra mile to ensure an amazing adventure. The company is known for making the experience enjoyable for groups of all ages.
     - Google rating: 4.9/5 (Google, 356 reviews)
+    - Pricing: $300 per person, $600 for two    
+    - Google rating: Highly rated on TripAdvisor (no specific Google rating found)
 
 ## Saturday Afternoon
 - [Vinnie Fera Winery](https://www.vinnieferawinery.com) — Boutique tasting, ~$50

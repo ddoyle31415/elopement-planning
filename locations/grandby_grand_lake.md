@@ -1,13 +1,14 @@
 # Grand Lake & Granby Elopement Weekend
 
 ## Lodging
-- [Arapaho Valley Ranch](https://www.arapahovalleyranch.com/) - Navajo or Niwot Cabin, historic 400 sq ft cabins in Arapaho National Forest with private porches and mountain views, ~$250–400/night
+- [Arapaho Valley Ranch](https://www.arapahovalleyranch.com/) - Navajo or Niwot Cabin, historic 400 sq ft cabins in Arapaho National Forest with private porches and mountain views
     - Photo: https://images.trvl-media.com/lodging/90000000/89540000/89538100/89538028/991560a3.jpg?impolicy=resizecrop&rw=1200&ra=fit
     - Photo: https://images.trvl-media.com/lodging/90000000/89540000/89538100/89538028/c001cca6.jpg?impolicy=resizecrop&rw=1200&ra=fit
     - Photo: https://images.trvl-media.com/lodging/90000000/89540000/89538100/89538028/fe687ce6.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill
     - Photo: https://www.goworldtravel.com/wp-content/uploads/2025/07/Arapaho-Valley-Ranch-2.jpg
     - Google Review Summary: This 40-acre glamping resort near Monarch Lake offers well-maintained tipi and glamping tent accommodations with friendly, accommodating staff. Guests appreciate the riverside location and amenities, though some note mosquito issues in late June and concerns about limited shower facilities and high dry camping rates.
     - Google rating: 4.7 stars (Google, 307 reviews)
+    - Pricing: $340 per night, $1,020 for 3 nights    
 
 ## Ceremony Location
 - [Point Park, Grand Lake](https://boco.colorado.gov/parks-open-space) - Lakeside dock & lawn at intersection of Grand Lake and Shadow Mountain Lake, US Forest Service permit required, ~$0–100
@@ -36,14 +37,16 @@
     - Photo: https://grandadventureballoon.com/wp-content/uploads/2018/04/no-watermark-3web.jpg
     - Google Review Summary: Captain Jack provides exceptional hot air balloon experiences with over 30 years of expertise and a perfect 30-year safety record. Passengers consistently praise his knowledge of the Fraser Valley, professional demeanor, and ability to put anxious flyers at ease; trips include breakfast and champagne. One reviewer reported poor communication regarding weather cancellations.
     - Google rating: 4.8/5 (Google, 39 reviews)
+    - Pricing: $425 per person, $850 for two    
 
 ## Couples Massage
-- [Sage Massage & Acupuncture](https://sagemassageacupuncture.com/) - Voted #1 Massage in Grand County 6 years, Himalayan salt stone and CBD treatments, couples/tandem welcome, ~$250–400
+- [Sage Massage & Acupuncture](https://sagemassageacupuncture.com/) - Voted #1 Massage in Grand County 6 years, Himalayan salt stone and CBD treatments, couples/tandem welcome, 
     - Google Review Summary: Sage's certified acupuncturists and massage therapists specialize in deep tissue, prenatal massage, cupping, and dry needling, with clients reporting pain relief and migraine prevention. With 20+ years of experience and Masters certification in Traditional Chinese Medicine, Sage is highly intuitive in reading body tension and releases trigger points effectively.
     - Google rating: 5.0/5 (Google, 390 reviews)
 - [Mountain Soul Wellness](https://www.mountainsoulwellness.com/) - 22+ years experience, deep tissue and vibroacoustic sound therapy room, ~$250–400
     - Google Review Summary: Sarah Chabot's award-winning wellness center offers advanced therapeutic massage, myofascial release, medicupping, and vibroacoustic sound therapy. Clients describe sessions as "probably the best massage I've ever had," praising her intuitive approach and ability to resolve chronic tension; ranked #2 of 2 spas in Grand Lake with 198 TripAdvisor reviews.
     - Google rating: 4.9/5 (Google, 184 reviews)
+    - Pricing: ~$200–300 per person, ~$400-600 for two    
 
 ## Thursday Dinner
 - [Brickhouse 40](https://www.yelp.com/biz/brickhouse-40-granby) - Downtown Granby, elevated comfort food in historic brick building, part saloon/part restaurant, ~$80–120
